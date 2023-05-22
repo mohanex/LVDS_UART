@@ -48,6 +48,9 @@
 #include <stdio.h>
 #include "platform.h"
 #include "xil_printf.h"
+#include "xparameters.h"
+#include "xgpio_l.h"
+#include <xspi.h>
 
 
 int main()
