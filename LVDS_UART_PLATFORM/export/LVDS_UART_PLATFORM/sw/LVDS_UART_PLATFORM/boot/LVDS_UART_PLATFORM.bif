@@ -1,0 +1,6 @@
+/*LVDS_UART_PLATFORM*/
+the_ROM_image:
+{
+   <bitstream> 
+   <elf> 
+}

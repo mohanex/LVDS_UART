@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="LVDS_UART" location="C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART" platform="C:/Users/mafassi/Desktop/UART_LVDS_Vitis/Microblaze_LVDS/export/Microblaze_LVDS/Microblaze_LVDS.xpfm" platformUID="xilinx:nexys_video::0.0(custom)" systemProject="LVDS_UART_system" sysConfig="Microblaze_LVDS" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="2972b0b669fd8290feff050d260b8459">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.443782313" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1739754542" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
