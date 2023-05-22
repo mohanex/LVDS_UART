@@ -50,11 +50,54 @@
 #include "xil_printf.h"
 #include "xparameters.h"
 #include "PmodGPIO.h"
-#include <xspi.h>
+#include "xspi.h"
+#include "xuartlite.h"
+#include "xbram.h"
+#include "xclk_wiz.h"
 
 
+
+#define GPIO_REG_BASEADDR	0x00100000
+#define GPIO_REG_TRI		0x04
+#define GPIO_REG_DATA		0x00
+
+#define QSPI_REG_BASEADDR   0x44A20000
+
+#define UART_REG_BASEADDR   0x40600000
+
+#define BRAM_REG_BASEADDR   0x00000000
+
+#define CLKWIZ_REG_BASEADDR 0x44A10000
+PmodGPIO *GPIO_input;
+
+XSpi_Stats *QSPI_stats;
+XSpi_Config *QSPI_config;
+XSpi *QSPI;
+
+XUartLite_Config *UART_config;
+XUartLite_Buffer *UART_Buffer;
+XUartLite_Stats *UART_Stats;
+XUartLite *UART;
+
+XBram *XBRAM;
+XBram_Config *XBRAM_config;
+
+
+XClk_Wiz *CLK_wiz;
+XClk_Wiz_Config *CLK_wiz_config;
 int main()
 {
+    //gpio initialization and tristate set
+    GPIO_begin(&GPIO_input,GPIO_REG_BASEADDR,1);
+    //QSPI initialization 
+    XSpi_CfgInitialize(&QSPI,&QSPI_config,QSPI_REG_BASEADDR);
+    //UART initialization
+    XUartLite_CfgInitialize(&UART,&UART_config,UART_REG_BASEADDR);
+    //XBRAM Initialization
+    XBram_CfgInitialize(&XBRAM,&XBRAM_config,BRAM_REG_BASEADDR);
+    //Clk_wiz Initialization
+    XClk_Wiz_CfgInitialize(&CLK_wiz,&CLK_wiz_config,CLKWIZ_REG_BASEADDR);
+
     init_platform();
 
     

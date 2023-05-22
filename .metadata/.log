@@ -4484,3 +4484,162 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.xilinx.sdk.utils 1 0 2023-05-22 11:44:19.639
 !MESSAGE Workspace path used is: C:\Users\mafassi\Desktop\UART_LVDS_Vitis2
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:40:29.475
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:40:29.477
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:40:29.479
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:40:32.486
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:40:35.496
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:40:38.501
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:40:38.503
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:40:41.508
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:40:44.526
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:40:47.532
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:21.707
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:21.709
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:21.711
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:21.717
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys Video 210276B06393B]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:21.718
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:21.723
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys Video 210276B06393B]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:21.724
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==1}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:21.735
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==1}], Result: [null,      2  xc7a200t (idcode 13636093 irlen 6 fpga)]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:30.231
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:30.233
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:30.234
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:30.239
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys Video 210276B06393B]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:30.242
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:30.247
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys Video 210276B06393B]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:30.248
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==1}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:30.261
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==1}], Result: [null,      2  xc7a200t (idcode 13636093 irlen 6 fpga)]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:32.620
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-58: Fetching Devices...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:32.623
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-58: Fetching Devices...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:32.625
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-58: Fetching Devices...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:32.633
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys Video 210276B06393B]. Thread: Worker-58: Fetching Devices...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:32.634
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-58: Fetching Devices...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:32.640
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys Video 210276B06393B]. Thread: Worker-58: Fetching Devices...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:32.643
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==1}], Thread: Worker-58: Fetching Devices...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:32.660
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==1}], Result: [null,      2  xc7a200t (idcode 13636093 irlen 6 fpga)]. Thread: Worker-58: Fetching Devices...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:34.778
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:34.781
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:34.782
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:34.787
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys Video 210276B06393B]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:34.787
+!MESSAGE XSCT Command: [proc fetch_device_jtag_ctx { node_id } {
+foreach t [jtag ta -ta] {
+if {[dict get $t node_id] == $node_id} {
+return [dict get $t target_ctx]
+}
+}
+error cannot find a jtag device with node id $node_id}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:34.789
+!MESSAGE XSCT command with result: [proc fetch_device_jtag_ctx { node_id } {
+foreach t [jtag ta -ta] {
+if {[dict get $t node_id] == $node_id} {
+return [dict get $t target_ctx]
+}
+}
+error cannot find a jtag device with node id $node_id}], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:34.790
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:34.795
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys Video 210276B06393B]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:34.796
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==1}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:34.808
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==1}], Result: [null,      2  xc7a200t (idcode 13636093 irlen 6 fpga)]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:34.810
+!MESSAGE XSCT Command: [fetch_device_jtag_ctx 2], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 15:41:34.813
+!MESSAGE XSCT command with result: [fetch_device_jtag_ctx 2], Result: [null, jsn-Nexys Video-210276B06393B-13636093-0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-05-22 15:41:42.958
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: soc_flash_files_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-05-22 15:41:42.959
+!MESSAGE Preference loaded using local preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-05-22 15:41:42.960
+!MESSAGE Workspace path used is: C:\Users\mafassi\Desktop\UART_LVDS_Vitis2

@@ -29,3 +29,14 @@
 11:22:40 INFO  : Successfully done query RDI_DATADIR 
 11:43:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
 11:43:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:40:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:40:47 ERROR : Could not retrieve Flash Part information. Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+15:41:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:41:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:41:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
