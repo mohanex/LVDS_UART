@@ -19,3 +19,13 @@
 10:59:11 INFO  : Result from executing command 'getPlatforms': LVDS_UART_PLATFORM|C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/LVDS_UART_PLATFORM.xpfm;Microblaze_LVDS|C:/Users/mafassi/Desktop/UART_LVDS_Vitis/Microblaze_LVDS/export/Microblaze_LVDS/Microblaze_LVDS.xpfm
 10:59:11 INFO  : Platform 'Microblaze_LVDS_1' is added to custom repositories.
 10:59:13 INFO  : Platform 'Microblaze_LVDS_1' is added to custom repositories.
+11:22:35 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\temp_xsdb_launch_script.tcl
+11:22:37 INFO  : XSCT server has started successfully.
+11:22:37 INFO  : Successfully done setting XSCT server connection channel  
+11:22:37 INFO  : plnx-install-location is set to ''
+11:22:37 INFO  : Successfully done setting workspace for the tool. 
+11:22:40 INFO  : Platform repository initialization has completed.
+11:22:40 INFO  : Registering command handlers for Vitis TCF services
+11:22:40 INFO  : Successfully done query RDI_DATADIR 
+11:43:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:43:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.

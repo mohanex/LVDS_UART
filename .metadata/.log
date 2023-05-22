@@ -4271,3 +4271,216 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 
 !ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:05:15.937
 !MESSAGE XSCT command with result: [::hsi::utils::closehw C:/Users/mafassi/AppData/Local/Temp/hwspec_Microblaze_LVDS11186092817965450067/Microblaze_LVDS.xsa], Result: [null, ]. Thread: main
+!SESSION 2023-05-22 11:22:22.708 -----------------------------------------------
+eclipse.buildId=2020.2
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2023-05-22 11:22:33.906
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:22:37.309
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:22:37.309
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:22:37.324
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:22:37.325
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:22:37.326
+!MESSAGE XSCT Command: [setws C:/Users/mafassi/Desktop/UART_LVDS_Vitis2], Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:22:37.329
+!MESSAGE XSCT command with result: [setws C:/Users/mafassi/Desktop/UART_LVDS_Vitis2], Result: [null, ]. Thread: Thread-21
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:22:40.057
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-05-22 11:22:40.534
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-05-22 11:22:40.536
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-05-22 11:22:40.537
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:22:40.669
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:22:40.670
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:22:40.673
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2020.2/data]. Thread: Worker-0: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:43:52.595
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:43:52.694
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:43:52.703
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:43:52.706
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa], Result: [null, {"device": "7a200t",
+"family": "artix7",
+"timestamp": "Mon May 22 09:32:17 2023",
+"vivado_version": "2020.2",
+"part": "xc7a200tsbg484-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:43:52.708
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:43:52.711
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa], Result: [null, {"PmodGPIO_0": {"hier_name": "PmodGPIO_0",
+"type": "PmodGPIO",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_quad_spi_0": {"hier_name": "axi_quad_spi_0",
+"type": "axi_quad_spi",
+"version": "3.2",
+"ip_type": "MEMORY_CNTLR",
+},
+"axi_timer_0": {"hier_name": "axi_timer_0",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_0": {"hier_name": "clk_wiz_0",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_axi_intc": {"hier_name": "microblaze_0_axi_intc",
+"type": "axi_intc",
+"version": "4.1",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"microblaze_0_axi_periph": {"hier_name": "microblaze_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"microblaze_0_xlconcat": {"hier_name": "microblaze_0_xlconcat",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:43:52.713
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:43:52.718
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:43:52.722
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:43:52.864
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys Video 210276B06393B]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:43:52.866
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:43:52.871
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys Video 210276B06393B]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:43:52.872
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==1}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:43:52.884
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==1}], Result: [null,      2  xc7a200t (idcode 13636093 irlen 6 fpga)]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:43:58.197
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:43:58.199
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:43:58.201
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:43:58.206
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys Video 210276B06393B]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:43:58.207
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:43:58.211
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys Video 210276B06393B]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:43:58.212
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==1}], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-05-22 11:43:58.223
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==1}], Result: [null,      2  xc7a200t (idcode 13636093 irlen 6 fpga)]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-05-22 11:44:19.638
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: soc_flash_files_selection, Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-05-22 11:44:19.639
+!MESSAGE Preference loaded using local preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-05-22 11:44:19.639
+!MESSAGE Workspace path used is: C:\Users\mafassi\Desktop\UART_LVDS_Vitis2
