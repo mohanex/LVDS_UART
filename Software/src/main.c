@@ -63,47 +63,24 @@
 
 #define GPIO_REG_TRI		0x04
 #define GPIO_REG_DATA		0x00
+#define GPIO_CHANNEL        1
+#define GPIO_INTERRUPT_PIN  1
 
-#define SPI_SELECT		0x01
-#define SPI_DEVICE_ID		XPAR_SPI_0_DEVICE_ID
-/*
- * Number of bytes per page in the flash device.
- */
-#define PAGE_SIZE		256
-
-/*
- * Byte Positions.
- */
-#define BYTE1				0 /* Byte 1 position */
-#define BYTE2				1 /* Byte 2 position */
-#define BYTE3				2 /* Byte 3 position */
-#define BYTE4				3 /* Byte 4 position */
-#define BYTE5				4 /* Byte 5 position */
-
-#define READ_WRITE_EXTRA_BYTES		4 /* Read/Write extra bytes */
-#define	READ_WRITE_EXTRA_BYTES_4BYTE_MODE	5 /**< Command extra bytes */
-
-#define RD_ID_SIZE					4
-
-#define ISSI_ID_BYTE0			0x9D
-#define MICRON_ID_BYTE0			0x20
-
-#define ENTER_4B_ADDR_MODE		0xb7 /* Enter 4Byte Mode command */
-#define EXIT_4B_ADDR_MODE		0xe9 /* Exit 4Byte Mode command */
-#define EXIT_4B_ADDR_MODE_ISSI	0x29
-#define	WRITE_ENABLE			0x06 /* Write Enable command */
-
-#define ENTER_4B	1
-#define EXIT_4B		0
-
-#define	FLASH_16_MB	0x18
-#define FLASH_MAKE		0
-#define	FLASH_SIZE		2
-
-#define	READ_CMD	0x03
+#define UARTlite_DEVICE_ID XPAR_AXI_UARTLITE_0_DEVICE_ID
+#define QSPI_DEVICE_ID	   XPAR_SPI_0_DEVICE_ID
+#define GPIO_DEVICE_ID     XPAR_PMODGPIO_0_DEVICE_ID
 
 
+#define BRAM_MATRIX_BASEADDR       0x000FFCD1
+#define QSPI_FLASH_SIZE            65536  // Size of QSPI flash in bytes (64KB)
+#define BUFFER_SIZE                32      // Buffer size for reading data
+#define BRAM_SIZE                  1048576     // Size of BRAM in bytes (1MB)
 
+u8 qspi_read_buffer[BUFFER_SIZE];
+u8 bram_buffer[BRAM_SIZE];
+
+
+//IPs Instanciations
 PmodGPIO *GPIO_input;
 
 XSpi_Stats *QSPI_stats;
@@ -132,20 +109,94 @@ XClk_Wiz_Config *CLK_wiz_config;
 
 int main()
 {
-    //gpio initialization and tristate set
-    GPIO_begin(&GPIO_input,XPAR_PMODGPIO_0_AXI_LITE_GPIO_BASEADDR,1);
-    //QSPI initialization 
-    XSpi_CfgInitialize(&QSPI,&QSPI_config,XPAR_AXI_QUAD_SPI_0_BASEADDR);
-    //UART initialization
-    XUartLite_CfgInitialize(&UART,&UART_config,XPAR_AXI_UARTLITE_0_BASEADDR);
-    //XBRAM Initialization
-    XBram_CfgInitialize(&XBRAM,&XBRAM_config,XPAR_MICROBLAZE_0_LOCAL_MEMORY_DLMB_BRAM_IF_CNTLR_BASEADDR);
-    //Clk_wiz Initialization
-    XClk_Wiz_CfgInitialize(&CLK_wiz,&CLK_wiz_config,XPAR_CLK_WIZ_0_BASEADDR);
-
     init_platform();
-
     
     cleanup_platform();
     return 0;
+}
+
+int init_qspi() {
+    int status;
+
+    QSPI_config = XSpi_LookupConfig(QSPI_DEVICE_ID);
+    if (QSPI_config == NULL) {
+        return XST_FAILURE;
+    }
+
+    status = XSpi_CfgInitialize(&QSPI, QSPI_config, QSPI_config->BaseAddress);
+    if (status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    status = XSpi_SetOptions(&QSPI, XSP_MASTER_OPTION | XSP_MANUAL_SSELECT_OPTION);
+	if(status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+    status = XSpi_Start(&QSPI);
+    if (status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    XSpi_IntrGlobalDisable(&QSPI);
+
+    return XST_SUCCESS;
+}
+
+int init_uart() {
+    int status;
+
+    status = XUartLite_Initialize(&UART, UARTlite_DEVICE_ID);
+    if (status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    return XST_SUCCESS;
+}
+
+int init_gpio() {
+    int status;
+
+    status = XGpio_Initialize(&gpio, GPIO_DEVICE_ID);
+    if (status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    // Set GPIO channel direction
+    XGpio_SetDataDirection(&gpio, GPIO_CHANNEL, 0xFFFFFFFF);
+
+    // Enable interrupt for GPIO channel
+    XGpio_InterruptEnable(&gpio, XGPIO_IR_CH1_MASK);
+    XGpio_InterruptGlobalEnable(&gpio);
+
+    // Register interrupt handler
+    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler)XGpio_InterruptHandler, &gpio);
+    Xil_ExceptionEnable();
+
+    return XST_SUCCESS;
+}
+
+void read_qspi_flash(u32 start_address, u32 size) {
+    u32 bytes_read = 0;
+    u32 bytes_to_read;
+    int status;
+
+    while (bytes_read < size) {
+        bytes_to_read = size - bytes_read;
+        if (bytes_to_read > BUFFER_SIZE) {
+            bytes_to_read = BUFFER_SIZE;
+        }
+
+        status = XSpi_Transfer(&QSPI, qspi_read_buffer, NULL, bytes_to_read);
+        if (status != XST_SUCCESS) {
+            xil_printf("QSPI read failed!\r\n");
+            break;
+        }
+
+        for (int i = 0; i < bytes_to_read; i++) {
+            XUartLite_SendByte(XPAR_AXI_UARTLITE_0_BASEADDR, qspi_read_buffer[i]);
+        }
+
+        bytes_read += bytes_to_read;
+    }
 }
