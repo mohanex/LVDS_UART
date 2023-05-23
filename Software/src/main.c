@@ -60,6 +60,8 @@
 #include "xuartlite.h"
 #include "xbram.h"
 #include "xclk_wiz.h"
+#include "xil_io.h"
+#include "xil_cache.h"
 
 #define GPIO_REG_TRI		0xFF
 #define GPIO_REG_DATA		0x00
@@ -70,10 +72,8 @@
 #define QSPI_DEVICE_ID	   XPAR_SPI_0_DEVICE_ID
 #define GPIO_DEVICE_ID     XPAR_PMODGPIO_0_DEVICE_ID
 
-
 #define BRAM_MATRIX_BASEADDR       0x000FFCD1
 #define QSPI_MATRIX_BASEADDR_BEGIN 0xFFF00001
-
 
 #define QSPI_FLASH_SIZE            65536  // Size of QSPI flash in bytes (64KB)
 #define BUFFER_SIZE                32      // Buffer size for reading data
@@ -81,7 +81,6 @@
 
 u8 qspi_read_buffer[BUFFER_SIZE];
 u8 bram_buffer[BRAM_SIZE];
-
 
 //IPs Instanciations
 PmodGPIO *GPIO_input;
@@ -116,7 +115,6 @@ int main()
 
     QSPI_read(start_address, read_size);
     xil_printf("Data wrote to BRAM at 0x\r\n");
-
 
     cleanup_platform();
     return 0;
@@ -157,7 +155,6 @@ int initialize_uart_fun() {
     if (status != XST_SUCCESS) {
         return XST_FAILURE;
     }
-
     return XST_SUCCESS;
 }
 
@@ -166,14 +163,11 @@ int initialize_bram_fun() {
 
     status = XBram_CfgInitialize(&XBRAM,&XBRAM_config,XPAR_MICROBLAZE_0_LOCAL_MEMORY_DLMB_BRAM_IF_CNTLR_BASEADDR);
     return status;
-
 }
 
 int initialize_gpio_fun() {
-
     void GPIO_begin(&GPIO_input, XPAR_PMODGPIO_0_AXI_LITE_GPIO_BASEADDR, GPIO_REG_TRI);
     return XST_SUCCESS;
-
 }
 
 void QSPI_read_fun(u32 start_address, u32 size) {
@@ -186,18 +180,23 @@ void QSPI_read_fun(u32 start_address, u32 size) {
         if (bytes_to_read > BUFFER_SIZE) {
             bytes_to_read = BUFFER_SIZE;
         }
-
         status = XSpi_Transfer(&QSPI, qspi_read_buffer, NULL, bytes_to_read);
         if (status != XST_SUCCESS) {
             xil_printf("QSPI read failed!\r\n");
             break;
         }
-
         for (u32 i = 0; i < bytes_to_read; i++) {
-            // Store the data in MicroBlaze internal RAM (Block RAM)
-            *((volatile u8*)(XPAR_MICROBLAZE_0_DATA_BRAM_BASEADDR + bytes_read + i)) = qspi_read_buffer[i];
+            // Store data in BRAM
+            //(BRAM_MATRIX_BASEADDR + bytes_read + i)) = qspi_read_buffer[i];
+            //u32 offset = bytes_read + i;
+            //Xil_Out8(BRAM_MATRIX_BASEADDR + bytes_read + i,qspi_read_buffer[i]);
+            save_to_BRAM(bytes_read, i, qspi_read_buffer);
         }
 
         bytes_read += bytes_to_read;
     }
+}
+
+void save_to_BRAM(u32 bytes_read, u32 offset, u8 buffer_read){
+    Xil_Out8(BRAM_MATRIX_BASEADDR + bytes_read + offset, qspi_read_buffer[offset]);
 }

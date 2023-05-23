@@ -1,6 +1,7 @@
 {
     "files.associations": {
-        "xparameters.h": "c"
+        "xparameters.h": "c",
+        "xil_io.h": "c"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
