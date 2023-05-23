@@ -62,6 +62,7 @@
 #include "xclk_wiz.h"
 #include "xil_io.h"
 #include "xil_cache.h"
+#include "sleep.h"
 
 #define GPIO_REG_TRI		0xFF
 #define GPIO_REG_DATA		0x00
@@ -74,6 +75,7 @@
 
 #define BRAM_MATRIX_BASEADDR       0x000FFCD1
 #define QSPI_MATRIX_BASEADDR_BEGIN 0xFFF00001
+#define UART_BASEADDR              XPAR_AXI_UARTLITE_0_BASEADDR
 
 #define QSPI_FLASH_SIZE            65536  // Size of QSPI flash in bytes (64KB)
 #define BUFFER_SIZE                32      // Buffer size for reading data
@@ -110,11 +112,31 @@ int main()
 
     xil_printf("QSPI Flash Read\r\n");
 
-    u32 start_address = QSPI_MATRIX_BASEADDR_BEGIN;  // l'adresse au débute les matrixes dans la qspi
+    u32 start_address = QSPI_MATRIX_BASEADDR_BEGIN;  // l'adresse où débute les matrixes dans la qspi
     u32 read_size = 25600;       // nombre de bits à lire 25ko sans csr 
 
-    QSPI_read(start_address, read_size);
-    xil_printf("Data wrote to BRAM at 0x\r\n");
+    QSPI_read_fun(start_address, read_size);
+    xil_printf("Data wrote to BRAM at %lu \r\n", (unsigned long)start_address);
+
+    while (1) {
+        // Check if GPIO interrupt occurred
+        if (XGpio_DiscreteRead(&GPIO_input, GPIO_CHANNEL) & GPIO_INTERRUPT_PIN) {
+            // Send data stored in Block RAM over UART
+            for (u32 i = 0; i < read_size; i++) {
+                u8 data = *((volatile u8*)(start_address + i));
+                XUartLite_SendByte(UART_BASEADDR, data);
+            }
+            break;
+        }
+    }
+
+    xil_printf("Data sent over UART.\r\n");
+
+
+    while(1){
+        usleep_MB(200000);
+        xil_printf("200ms attente");
+    }
 
     cleanup_platform();
     return 0;
@@ -151,7 +173,7 @@ int initialize_qspi_fun() {
 int initialize_uart_fun() {
     int status;
 
-    status = XUartLite_Initialize(&UART, UARTlite_DEVICE_ID);
+    status = XUartLite_Initialize(&UART, UART_DEVICE_ID);
     if (status != XST_SUCCESS) {
         return XST_FAILURE;
     }
