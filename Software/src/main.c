@@ -61,17 +61,20 @@
 #include "xbram.h"
 #include "xclk_wiz.h"
 
-#define GPIO_REG_TRI		0x04
+#define GPIO_REG_TRI		0xFF
 #define GPIO_REG_DATA		0x00
 #define GPIO_CHANNEL        1
 #define GPIO_INTERRUPT_PIN  1
 
-#define UARTlite_DEVICE_ID XPAR_AXI_UARTLITE_0_DEVICE_ID
+#define UART_DEVICE_ID     XPAR_AXI_UARTLITE_0_DEVICE_ID
 #define QSPI_DEVICE_ID	   XPAR_SPI_0_DEVICE_ID
 #define GPIO_DEVICE_ID     XPAR_PMODGPIO_0_DEVICE_ID
 
 
 #define BRAM_MATRIX_BASEADDR       0x000FFCD1
+#define QSPI_MATRIX_BASEADDR_BEGIN 0xFFF00001
+
+
 #define QSPI_FLASH_SIZE            65536  // Size of QSPI flash in bytes (64KB)
 #define BUFFER_SIZE                32      // Buffer size for reading data
 #define BRAM_SIZE                  1048576     // Size of BRAM in bytes (1MB)
@@ -95,27 +98,31 @@ XUartLite *UART;
 XBram *XBRAM;
 XBram_Config *XBRAM_config;
 
-
 XClk_Wiz *CLK_wiz;
 XClk_Wiz_Config *CLK_wiz_config;
 
-
-
-
-
-
-
-
-
 int main()
-{
+{   
+    initialize_qspi_fun();
+    initialize_uart_fun();
+    initialize_gpio_fun();
+    initialize_bram_fun();
     init_platform();
-    
+
+    xil_printf("QSPI Flash Read\r\n");
+
+    u32 start_address = QSPI_MATRIX_BASEADDR_BEGIN;  // l'adresse au débute les matrixes dans la qspi
+    u32 read_size = 25600;       // nombre de bits à lire 25ko sans csr 
+
+    QSPI_read(start_address, read_size);
+    xil_printf("Data wrote to BRAM at 0x\r\n");
+
+
     cleanup_platform();
     return 0;
 }
 
-int init_qspi() {
+int initialize_qspi_fun() {
     int status;
 
     QSPI_config = XSpi_LookupConfig(QSPI_DEVICE_ID);
@@ -143,7 +150,7 @@ int init_qspi() {
     return XST_SUCCESS;
 }
 
-int init_uart() {
+int initialize_uart_fun() {
     int status;
 
     status = XUartLite_Initialize(&UART, UARTlite_DEVICE_ID);
@@ -154,29 +161,22 @@ int init_uart() {
     return XST_SUCCESS;
 }
 
-int init_gpio() {
+int initialize_bram_fun() {
     int status;
 
-    status = XGpio_Initialize(&gpio, GPIO_DEVICE_ID);
-    if (status != XST_SUCCESS) {
-        return XST_FAILURE;
-    }
+    status = XBram_CfgInitialize(&XBRAM,&XBRAM_config,XPAR_MICROBLAZE_0_LOCAL_MEMORY_DLMB_BRAM_IF_CNTLR_BASEADDR);
+    return status;
 
-    // Set GPIO channel direction
-    XGpio_SetDataDirection(&gpio, GPIO_CHANNEL, 0xFFFFFFFF);
-
-    // Enable interrupt for GPIO channel
-    XGpio_InterruptEnable(&gpio, XGPIO_IR_CH1_MASK);
-    XGpio_InterruptGlobalEnable(&gpio);
-
-    // Register interrupt handler
-    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler)XGpio_InterruptHandler, &gpio);
-    Xil_ExceptionEnable();
-
-    return XST_SUCCESS;
 }
 
-void read_qspi_flash(u32 start_address, u32 size) {
+int initialize_gpio_fun() {
+
+    void GPIO_begin(&GPIO_input, XPAR_PMODGPIO_0_AXI_LITE_GPIO_BASEADDR, GPIO_REG_TRI);
+    return XST_SUCCESS;
+
+}
+
+void QSPI_read_fun(u32 start_address, u32 size) {
     u32 bytes_read = 0;
     u32 bytes_to_read;
     int status;
@@ -193,8 +193,9 @@ void read_qspi_flash(u32 start_address, u32 size) {
             break;
         }
 
-        for (int i = 0; i < bytes_to_read; i++) {
-            XUartLite_SendByte(XPAR_AXI_UARTLITE_0_BASEADDR, qspi_read_buffer[i]);
+        for (u32 i = 0; i < bytes_to_read; i++) {
+            // Store the data in MicroBlaze internal RAM (Block RAM)
+            *((volatile u8*)(XPAR_MICROBLAZE_0_DATA_BRAM_BASEADDR + bytes_read + i)) = qspi_read_buffer[i];
         }
 
         bytes_read += bytes_to_read;
