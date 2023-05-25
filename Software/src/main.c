@@ -60,18 +60,27 @@
 #include "xil_cache.h"
 #include "sleep.h"
 
+#define BYTE1				0 /* Byte 1 position */
+#define BYTE2				1 /* Byte 2 position */
+#define BYTE3				2 /* Byte 3 position */
+#define BYTE4				3 /* Byte 4 position */
+#define BYTE5				4 /* Byte 5 position */
+
 #define GPIO_REG_Input		0xFF
 #define GPIO_REG_DATA		0x00
 #define GPIO_CHANNEL        2
 #define GPIO_INTERRUPT_PIN  1
-#define SPI_SELECT		    0x01
+
+#define SPI_SELECT		    1
+#define PAGE_SIZE		    256
+#define READ_WRITE_EXTRA_BYTES 4
 
 #define UART_DEVICE_ID     XPAR_AXI_UARTLITE_0_DEVICE_ID
 #define QSPI_DEVICE_ID	   XPAR_SPI_0_DEVICE_ID
 #define GPIO_DEVICE_ID     XPAR_PMODGPIO_0_DEVICE_ID
 
 #define BRAM_MATRIX_BASEADDR       0x000F4240
-#define QSPI_MATRIX_BASEADDR_BEGIN 0x00F00000
+#define QSPI_MATRIX_BASEADDR_BEGIN 0x01E00000 // 0x01E00000    0x01E18FFF    May 25 14:11:24 2023    C:/Users/mafassi/Downloads/random_hex.hex
 #define UART_BASEADDR              XPAR_AXI_UARTLITE_0_BASEADDR
 #define QSPI_BASEADDR              XPAR_AXI_QUAD_SPI_0_BASEADDR
 
@@ -85,8 +94,20 @@
 //IPs Instantiations
 PmodGPIO GPIO_input;
 
-XSpi_Stats QSPI_stats;
-XSpi QSPI;
+//XSpi_Stats QSPI_stats;
+static XSpi QSPI;
+
+u8 ReadID[PAGE_SIZE + READ_WRITE_EXTRA_BYTES];
+u8 WriteID[PAGE_SIZE + READ_WRITE_EXTRA_BYTES];
+
+u8 qspi_read_buffer[PAGE_SIZE + READ_WRITE_EXTRA_BYTES];
+u8 qspi_write_buffer[PAGE_SIZE + READ_WRITE_EXTRA_BYTES];
+/*
+ * Buffer used during Read transactions.
+ */
+
+u8 FlashID[3];
+
 
 /*
  *
@@ -103,13 +124,14 @@ XClk_Wiz_Config *CLK_wiz_config;
 
 /*prototypes
  *
- */
-void save_to_BRAM(u32 bytes_read, u32 offset, u8 buffer_read);
+ 
+void save_to_BRAM(u32 bytes_read, u32 offset, u8 buffer_read);*/
 void QSPI_read_fun(u32 start_address, u32 size);
 int initialize_qspi_fun();
+int FlashReadID(void);
 //int initialize_uart_fun();
 int initialize_gpio_fun();
-int initialize_bram_fun();
+//int initialize_bram_fun();
 
 int main()
 {   
@@ -170,13 +192,17 @@ int initialize_qspi_fun() {
     XSpi_Config *conf;
     conf = XSpi_LookupConfig(QSPI_DEVICE_ID);
 
-
-    status = XSpi_CfgInitialize(&QSPI, conf, QSPI_BASEADDR);
+    status = XSpi_CfgInitialize(&QSPI, conf, QSPI_MATRIX_BASEADDR_BEGIN);
     if (status != XST_SUCCESS) {
         return XST_FAILURE;
     }
 
-    status = XSpi_SetOptions(&QSPI, XSP_MASTER_OPTION /*| XSP_MANUAL_SSELECT_OPTION*/);
+    /*status = XSpi_Initialize(&QSPI, QSPI_DEVICE_ID);
+    if (status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }*/
+
+    status = XSpi_SetOptions(&QSPI, XSP_MASTER_OPTION | XSP_MANUAL_SSELECT_OPTION);
 	if(status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
@@ -193,6 +219,11 @@ int initialize_qspi_fun() {
 
     XSpi_IntrGlobalDisable(&QSPI);
 
+    status = FlashReadID( );
+	if(status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
     return XST_SUCCESS;
 }
 
@@ -207,18 +238,16 @@ void QSPI_read_fun(u32 start_address, u32 size) {
     u32 bytes_read = 0;
     u32 bytes_to_read;
     size_t memcpy_size;
-    u8 qspi_read_buffer[BUFFER_SIZE] = {0};
-    u8 qspi_write_buffer[BUFFER_SIZE] = {0};
-    xil_printf("qspi_read_buffer : %lu \r\n",(unsigned long)qspi_read_buffer);
+
 
     int status;
 
     while (bytes_read < size) {
         bytes_to_read = size - bytes_read;
-        if (bytes_to_read > BUFFER_SIZE) {
-            bytes_to_read = BUFFER_SIZE;
+        if (bytes_to_read > PAGE_SIZE) {
+            bytes_to_read = PAGE_SIZE;
         }
-        status = XSpi_Transfer(&QSPI, qspi_write_buffer, qspi_read_buffer, bytes_to_read);
+        status = XSpi_Transfer(&QSPI, qspi_write_buffer, qspi_read_buffer, (unsigned int)bytes_to_read);
         if (status == XST_FAILURE) {
             xil_printf("QSPI read failed!\r\n");
             break;
@@ -229,9 +258,33 @@ void QSPI_read_fun(u32 start_address, u32 size) {
         for (u32 i = 0; i < bytes_to_read; i++) {
             Xil_Out8(BRAM_MATRIX_BASEADDR + bytes_read + i,qspi_read_buffer[i]);
             memcpy(BRAM_MATRIX_BASEADDR + i + bytes_read, qspi_read_buffer, bytes_to_read);
-
         }
-         	 */
+        */
         bytes_read += bytes_to_read;
     }
+}
+
+int FlashReadID(void)
+{
+	int Status;
+	int i;
+
+	/* Read ID in Auto mode.*/
+	WriteID[BYTE1] = 0x9f;
+	WriteID[BYTE2] = 0xff;		/* 4 dummy bytes */
+	WriteID[BYTE3] = 0xff;
+	WriteID[BYTE4] = 0xff;
+	WriteID[BYTE5] = 0xff;
+
+	Status = XSpi_Transfer(&QSPI, WriteID, ReadID, 5);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	for(i = 0; i < 3; i++)
+		FlashID[i] = ReadID[i + 1];
+
+	xil_printf("FlashID=0x%x 0x%x 0x%x\n\r", ReadID[1], ReadID[2],
+				ReadID[3]);
+	return XST_SUCCESS;
 }
