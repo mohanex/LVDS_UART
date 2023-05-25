@@ -1,23 +1,8 @@
 Nothing to build in platform 'LVDS_UART_PLATFORM'
 
-11:43:03 **** Incremental Build of configuration Debug for project Software ****
+11:11:50 **** Incremental Build of configuration Debug for project Software ****
 make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -IC:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/sw/LVDS_UART_PLATFORM/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: Software.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/sw/LVDS_UART_PLATFORM/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Software.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: Software.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size Software.elf  |tee "Software.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   9756	    388	   3184	  13328	   3410	Software.elf
-'Finished building: Software.elf.size'
-' '
-11:43:04 **** Incremental Build of configuration Debug for project Software_system ****
+make: Nothing to be done for 'all'.
+11:11:50 **** Incremental Build of configuration Debug for project Software_system ****
 make all 
 Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

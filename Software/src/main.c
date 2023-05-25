@@ -62,15 +62,16 @@
 
 #define GPIO_REG_Input		0xFF
 #define GPIO_REG_DATA		0x00
-#define GPIO_CHANNEL        1
+#define GPIO_CHANNEL        2
 #define GPIO_INTERRUPT_PIN  1
+#define SPI_SELECT		    0x01
 
 #define UART_DEVICE_ID     XPAR_AXI_UARTLITE_0_DEVICE_ID
 #define QSPI_DEVICE_ID	   XPAR_SPI_0_DEVICE_ID
 #define GPIO_DEVICE_ID     XPAR_PMODGPIO_0_DEVICE_ID
 
 #define BRAM_MATRIX_BASEADDR       0x000F4240
-#define QSPI_MATRIX_BASEADDR_BEGIN 0xFFF00001
+#define QSPI_MATRIX_BASEADDR_BEGIN 0x00F00000
 #define UART_BASEADDR              XPAR_AXI_UARTLITE_0_BASEADDR
 #define QSPI_BASEADDR              XPAR_AXI_QUAD_SPI_0_BASEADDR
 
@@ -78,23 +79,24 @@
 #define BUFFER_SIZE                32      // Buffer size for reading data
 //#define BRAM_SIZE                  1048576     // Size of BRAM in bytes (1MB)
 
-u8 qspi_read_buffer[BUFFER_SIZE];
+
 //u8 bram_buffer[BRAM_SIZE];
 
 //IPs Instantiations
-PmodGPIO *GPIO_input;
+PmodGPIO GPIO_input;
 
-XSpi_Stats *QSPI_stats;
-XSpi_Config *QSPI_config;
-XSpi *QSPI;
+XSpi_Stats QSPI_stats;
+XSpi QSPI;
+
 /*
+ *
 XUartLite_Config *UART_config;
 XUartLite_Buffer *UART_Buffer;
 XUartLite_Stats *UART_Stats;
 XUartLite *UART;
 */
-XBram *XBRAM;
-XBram_Config *XBRAM_config;
+XBram XBRAM;
+XBram_Config XBRAM_config;
 
 XClk_Wiz *CLK_wiz;
 XClk_Wiz_Config *CLK_wiz_config;
@@ -124,17 +126,18 @@ int status_valide;
 		xil_printf("gpio initialize failed\r\n");
 	}
 
-    xil_printf("QSPI Flash Read operation\r\n");
+    xil_printf("QSPI Flash Read operation from %lu\r\n", (unsigned long)QSPI_MATRIX_BASEADDR_BEGIN);
 
     u32 start_address = QSPI_MATRIX_BASEADDR_BEGIN;  // l'adresse oÃƒÂ¹ dÃƒÂ©bute les matrixes dans la qspi
     u32 read_size = 25600;       // nombre de bits ÃƒÂ  lire 25ko sans csr
 
+    xil_printf("Writing DATA to BRAM at %lu \r\n", (unsigned long)BRAM_MATRIX_BASEADDR);
     QSPI_read_fun(start_address, read_size);
-    xil_printf("Data wrote to BRAM at %lu \r\n", (unsigned long)start_address);
+
 
     while (1) {
         // Check if GPIO interrupt occurred
-        if (GPIO_getPin(GPIO_input, GPIO_CHANNEL)){
+        if (GPIO_getPin(&GPIO_input, GPIO_CHANNEL)){
             // Send data stored in Block RAM over UART
             for (u32 i = 0; i < read_size; i++) {
                 u8 data = *((volatile u8*)(start_address + i));
@@ -164,28 +167,31 @@ int status_valide;
 */
 int initialize_qspi_fun() {
     int status;
+    XSpi_Config *conf;
+    conf = XSpi_LookupConfig(QSPI_DEVICE_ID);
 
-    QSPI_config = XSpi_LookupConfig(QSPI_DEVICE_ID);
-    if (QSPI_config == NULL) {
-        return XST_FAILURE;
-    }
 
-    status = XSpi_CfgInitialize(QSPI, QSPI_config, QSPI_BASEADDR);
+    status = XSpi_CfgInitialize(&QSPI, conf, QSPI_BASEADDR);
     if (status != XST_SUCCESS) {
         return XST_FAILURE;
     }
 
-    status = XSpi_SetOptions(QSPI, XSP_MASTER_OPTION | XSP_MANUAL_SSELECT_OPTION);
+    status = XSpi_SetOptions(&QSPI, XSP_MASTER_OPTION /*| XSP_MANUAL_SSELECT_OPTION*/);
 	if(status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
 
-    status = XSpi_Start(QSPI);
+	status = XSpi_SetSlaveSelect(&QSPI, SPI_SELECT);
+	if(status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+    status = XSpi_Start(&QSPI);
     if (status != XST_SUCCESS) {
         return XST_FAILURE;
     }
 
-    XSpi_IntrGlobalDisable(QSPI);
+    XSpi_IntrGlobalDisable(&QSPI);
 
     return XST_SUCCESS;
 }
@@ -193,13 +199,18 @@ int initialize_qspi_fun() {
 
 
 int initialize_gpio_fun() {
-    GPIO_begin(GPIO_input, GPIO_DEVICE_ID, GPIO_REG_Input);
+    GPIO_begin(&GPIO_input, GPIO_DEVICE_ID, GPIO_REG_Input);
     return XST_SUCCESS;
 }
 
 void QSPI_read_fun(u32 start_address, u32 size) {
     u32 bytes_read = 0;
     u32 bytes_to_read;
+    size_t memcpy_size;
+    u8 qspi_read_buffer[BUFFER_SIZE] = {0};
+    u8 qspi_write_buffer[BUFFER_SIZE] = {0};
+    xil_printf("qspi_read_buffer : %lu \r\n",(unsigned long)qspi_read_buffer);
+
     int status;
 
     while (bytes_read < size) {
@@ -207,15 +218,20 @@ void QSPI_read_fun(u32 start_address, u32 size) {
         if (bytes_to_read > BUFFER_SIZE) {
             bytes_to_read = BUFFER_SIZE;
         }
-        status = XSpi_Transfer(QSPI, qspi_read_buffer, NULL, bytes_to_read);
-        if (status != XST_SUCCESS) {
+        status = XSpi_Transfer(&QSPI, qspi_write_buffer, qspi_read_buffer, bytes_to_read);
+        if (status == XST_FAILURE) {
             xil_printf("QSPI read failed!\r\n");
             break;
         }
+        memcpy_size = sizeof(qspi_read_buffer);
+        memcpy((void*)((char*)BRAM_MATRIX_BASEADDR + bytes_read), qspi_read_buffer, memcpy_size);
+        /*
         for (u32 i = 0; i < bytes_to_read; i++) {
             Xil_Out8(BRAM_MATRIX_BASEADDR + bytes_read + i,qspi_read_buffer[i]);
-        }
+            memcpy(BRAM_MATRIX_BASEADDR + i + bytes_read, qspi_read_buffer, bytes_to_read);
 
+        }
+         	 */
         bytes_read += bytes_to_read;
     }
 }

@@ -8,7 +8,7 @@
 LVDS_UART_PLATFORM
     </sdx:description>
     <sdx:hardwarePlatforms>
-        <sdx:hardwarePlatform sdx:path="hw" sdx:name="Microblaze_LVDS.xsa"/>
+        <sdx:hardwarePlatform sdx:path="hw" sdx:name="design_1_wrapper_V1.xsa"/>
     </sdx:hardwarePlatforms>
     <sdx:softwarePlatforms>
         <sdx:softwarePlatform sdx:path="sw" sdx:name="LVDS_UART_PLATFORM.spfm"/>
