@@ -41,7 +41,7 @@
 #define RECORD_TERMINATOR	2
 
 /* Comment the following line, if you want a smaller and faster bootloader which will be silent */
-#define VERBOSE
+//#define VERBOSE
 
 /* Declarations */
 static void display_progress (uint32_t lines);
@@ -141,7 +141,7 @@ static uint8_t sr_data_buf[SREC_DATA_MAX_BYTES];
 u32 flbuf;
 
 #ifdef VERBOSE
-static int8_t errors[] = {
+static int8_t *errors[] = {
 	"",
 	"Error while copying executable image into RAM",
 	"Error while reading an SREC line from flash",

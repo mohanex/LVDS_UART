@@ -183,3 +183,9 @@ timestamp=[2023-05-26 10:52:16], mode=BUILD, duration=0:00:00.704, duration_ms=7
 timestamp=[2023-05-26 10:53:08], mode=BUILD, duration=0:00:00.359, duration_ms=359, data={name=LVDS_UART_Bootloader, configuration=Debug, clean_build=false}
 timestamp=[2023-05-26 10:57:39], mode=BUILD, duration=0:00:00.315, duration_ms=315, data={name=LVDS_UART_Bootloader, configuration=Debug, clean_build=false}
 timestamp=[2023-05-26 10:57:40], mode=BUILD, duration=0:00:00.960, duration_ms=960, data={name=Software, configuration=Debug, clean_build=false}
+timestamp=[2023-05-26 11:01:58], mode=APP_CREATION, duration=0:00:08.828, duration_ms=8828, data={name=LVDS_UART_Bootloader, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=design_1_wrapper_V1, application_type=application}
+timestamp=[2023-05-26 11:04:15], mode=APP_CREATION, duration=0:00:00.881, duration_ms=881, data={name=LVDS_UART_Bootloader, project_type=sdk, os=standalone, processor=microblaze_0, runtime=C/C++, platform=LVDS_UART_PLATFORM, application_type=application}
+timestamp=[2023-05-26 11:04:43], mode=BUILD, duration=0:00:01.843, duration_ms=1843, data={name=LVDS_UART_Bootloader, configuration=Debug, clean_build=false}
+timestamp=[2023-05-26 11:04:43], mode=BUILD, duration=0:00:00.194, duration_ms=194, data={name=LVDS_UART_Bootloader_system, configuration=Debug, clean_build=false}
+timestamp=[2023-05-26 11:06:17], mode=BUILD, duration=0:00:01.082, duration_ms=1082, data={name=LVDS_UART_Bootloader, configuration=Debug, clean_build=false}
+timestamp=[2023-05-26 11:06:18], mode=BUILD, duration=0:00:00.188, duration_ms=188, data={name=LVDS_UART_Bootloader_system, configuration=Debug, clean_build=false}

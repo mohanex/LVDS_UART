@@ -40,3 +40,1624 @@ Troubleshooting hints:
 15:41:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
 15:41:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
 15:41:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:54:17 INFO  : Result from executing command 'getProjects': LVDS_UART_PLATFORM;Microblaze_LVDS
+09:54:17 INFO  : Result from executing command 'getPlatforms': LVDS_UART_PLATFORM|C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/LVDS_UART_PLATFORM.xpfm;Microblaze_LVDS|C:/Users/mafassi/Desktop/UART_LVDS_Vitis/Microblaze_LVDS/export/Microblaze_LVDS/Microblaze_LVDS.xpfm
+09:54:41 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+09:54:57 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+09:55:19 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:07:19 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:13:02 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:17:53 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:30:19 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:31:25 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:34:54 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:40:18 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+10:40:30 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:40:54 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:42:54 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:43:47 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:47:11 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:53:01 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:58:33 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:59:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:59:01 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+10:59:01 INFO  : 'jtag frequency' command is executed.
+10:59:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+10:59:06 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+10:59:07 INFO  : Context for processor 'microblaze_0' is selected.
+10:59:07 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+10:59:07 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:59:07 INFO  : Context for processor 'microblaze_0' is selected.
+10:59:07 INFO  : System reset is completed.
+10:59:10 INFO  : 'after 3000' command is executed.
+10:59:10 INFO  : Context for processor 'microblaze_0' is selected.
+10:59:10 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+10:59:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+10:59:10 INFO  : Context for processor 'microblaze_0' is selected.
+10:59:10 INFO  : 'con' command is executed.
+10:59:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:59:10 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\debugger_software-default.tcl'
+11:00:46 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+11:01:06 INFO  : Disconnected from the channel tcfchan#1.
+11:01:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:01:07 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+11:01:07 INFO  : 'jtag frequency' command is executed.
+11:01:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+11:01:12 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+11:01:12 INFO  : Context for processor 'microblaze_0' is selected.
+11:01:13 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+11:01:13 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:01:13 INFO  : Context for processor 'microblaze_0' is selected.
+11:01:13 INFO  : System reset is completed.
+11:01:16 INFO  : 'after 3000' command is executed.
+11:01:16 INFO  : Context for processor 'microblaze_0' is selected.
+11:01:16 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+11:01:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+11:01:16 INFO  : Context for processor 'microblaze_0' is selected.
+11:01:16 INFO  : 'con' command is executed.
+11:01:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:01:16 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+11:01:50 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+11:01:59 INFO  : Disconnected from the channel tcfchan#3.
+11:01:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:01:59 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+11:01:59 INFO  : 'jtag frequency' command is executed.
+11:01:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+11:02:05 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+11:02:05 INFO  : Context for processor 'microblaze_0' is selected.
+11:02:05 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+11:02:05 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:02:05 INFO  : Context for processor 'microblaze_0' is selected.
+11:02:05 INFO  : System reset is completed.
+11:02:08 INFO  : 'after 3000' command is executed.
+11:02:08 INFO  : Context for processor 'microblaze_0' is selected.
+11:02:08 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+11:02:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+11:02:08 INFO  : Context for processor 'microblaze_0' is selected.
+11:02:08 INFO  : 'con' command is executed.
+11:02:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:02:08 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+11:03:25 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+11:03:35 INFO  : Disconnected from the channel tcfchan#4.
+11:03:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:03:35 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+11:03:35 INFO  : 'jtag frequency' command is executed.
+11:03:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+11:03:40 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+11:03:41 INFO  : Context for processor 'microblaze_0' is selected.
+11:03:41 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+11:03:41 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:03:41 INFO  : Context for processor 'microblaze_0' is selected.
+11:03:41 INFO  : System reset is completed.
+11:03:44 INFO  : 'after 3000' command is executed.
+11:03:44 INFO  : Context for processor 'microblaze_0' is selected.
+11:03:44 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+11:03:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+11:03:44 INFO  : Context for processor 'microblaze_0' is selected.
+11:03:44 INFO  : 'con' command is executed.
+11:03:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:03:44 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+11:04:43 INFO  : Disconnected from the channel tcfchan#5.
+11:04:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:04:43 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+11:04:43 INFO  : 'jtag frequency' command is executed.
+11:04:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+11:04:49 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+11:04:49 INFO  : Context for processor 'microblaze_0' is selected.
+11:04:49 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+11:04:49 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:04:49 INFO  : Context for processor 'microblaze_0' is selected.
+11:04:49 INFO  : System reset is completed.
+11:04:52 INFO  : 'after 3000' command is executed.
+11:04:52 INFO  : Context for processor 'microblaze_0' is selected.
+11:04:52 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+11:04:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+11:04:52 INFO  : Context for processor 'microblaze_0' is selected.
+11:04:52 INFO  : 'con' command is executed.
+11:04:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:04:52 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+11:07:01 INFO  : Disconnected from the channel tcfchan#6.
+11:07:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:07:11 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+11:07:11 INFO  : 'jtag frequency' command is executed.
+11:07:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+11:07:16 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+11:07:16 INFO  : Context for processor 'microblaze_0' is selected.
+11:07:16 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+11:07:16 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:07:16 INFO  : Context for processor 'microblaze_0' is selected.
+11:07:16 INFO  : System reset is completed.
+11:07:19 INFO  : 'after 3000' command is executed.
+11:07:19 INFO  : Context for processor 'microblaze_0' is selected.
+11:07:20 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+11:07:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+11:07:20 INFO  : Context for processor 'microblaze_0' is selected.
+11:07:20 INFO  : 'con' command is executed.
+11:07:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:07:20 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+11:35:54 INFO  : Disconnected from the channel tcfchan#7.
+11:35:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:35:54 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+11:35:54 INFO  : 'jtag frequency' command is executed.
+11:35:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+11:36:00 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+11:36:00 INFO  : Context for processor 'microblaze_0' is selected.
+11:36:00 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+11:36:00 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:36:00 INFO  : Context for processor 'microblaze_0' is selected.
+11:36:00 INFO  : System reset is completed.
+11:36:03 INFO  : 'after 3000' command is executed.
+11:36:03 INFO  : Context for processor 'microblaze_0' is selected.
+11:36:03 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+11:36:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+11:36:03 INFO  : Context for processor 'microblaze_0' is selected.
+11:36:03 INFO  : 'con' command is executed.
+11:36:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:36:03 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+11:37:50 INFO  : Disconnected from the channel tcfchan#8.
+11:37:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:37:50 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+11:37:50 INFO  : 'jtag frequency' command is executed.
+11:37:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+11:37:56 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+11:37:56 INFO  : Context for processor 'microblaze_0' is selected.
+11:37:56 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+11:37:56 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:37:56 INFO  : Context for processor 'microblaze_0' is selected.
+11:37:56 INFO  : System reset is completed.
+11:37:59 INFO  : 'after 3000' command is executed.
+11:37:59 INFO  : Context for processor 'microblaze_0' is selected.
+11:37:59 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+11:37:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+11:37:59 INFO  : Context for processor 'microblaze_0' is selected.
+11:37:59 INFO  : 'con' command is executed.
+11:37:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:37:59 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+11:42:52 INFO  : Disconnected from the channel tcfchan#9.
+11:43:03 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+11:43:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:43:12 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+11:43:12 INFO  : 'jtag frequency' command is executed.
+11:43:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+11:43:18 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+11:43:18 INFO  : Context for processor 'microblaze_0' is selected.
+11:43:18 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+11:43:18 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:43:18 INFO  : Context for processor 'microblaze_0' is selected.
+11:43:18 INFO  : System reset is completed.
+11:43:21 INFO  : 'after 3000' command is executed.
+11:43:21 INFO  : Context for processor 'microblaze_0' is selected.
+11:43:21 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+11:43:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+11:43:21 INFO  : Context for processor 'microblaze_0' is selected.
+11:43:21 INFO  : 'con' command is executed.
+11:43:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:43:21 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+11:45:01 INFO  : Disconnected from the channel tcfchan#10.
+11:45:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:45:02 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+11:45:02 INFO  : 'jtag frequency' command is executed.
+11:45:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+11:45:07 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+11:45:07 INFO  : Context for processor 'microblaze_0' is selected.
+11:45:07 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+11:45:07 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:45:07 INFO  : Context for processor 'microblaze_0' is selected.
+11:45:07 INFO  : System reset is completed.
+11:45:10 INFO  : 'after 3000' command is executed.
+11:45:10 INFO  : Context for processor 'microblaze_0' is selected.
+11:45:10 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+11:45:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+11:45:11 INFO  : Context for processor 'microblaze_0' is selected.
+11:45:11 INFO  : 'con' command is executed.
+11:45:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:45:11 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+13:55:11 INFO  : Disconnected from the channel tcfchan#11.
+13:55:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:55:11 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+13:55:11 INFO  : 'jtag frequency' command is executed.
+13:55:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+13:55:17 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+13:55:17 INFO  : Context for processor 'microblaze_0' is selected.
+13:55:17 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+13:55:17 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+13:55:17 INFO  : Context for processor 'microblaze_0' is selected.
+13:55:17 INFO  : System reset is completed.
+13:55:20 INFO  : 'after 3000' command is executed.
+13:55:20 INFO  : Context for processor 'microblaze_0' is selected.
+13:55:20 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+13:55:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+13:55:20 INFO  : Context for processor 'microblaze_0' is selected.
+13:55:20 INFO  : 'con' command is executed.
+13:55:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+13:55:20 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+14:16:18 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+14:16:28 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+14:16:38 INFO  : Disconnected from the channel tcfchan#12.
+14:16:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:16:38 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+14:16:38 INFO  : 'jtag frequency' command is executed.
+14:16:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+14:16:44 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+14:16:44 INFO  : Context for processor 'microblaze_0' is selected.
+14:16:44 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+14:16:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:16:44 INFO  : Context for processor 'microblaze_0' is selected.
+14:16:44 INFO  : System reset is completed.
+14:16:47 INFO  : 'after 3000' command is executed.
+14:16:47 INFO  : Context for processor 'microblaze_0' is selected.
+14:16:47 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+14:16:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+14:16:47 INFO  : Context for processor 'microblaze_0' is selected.
+14:16:47 INFO  : 'con' command is executed.
+14:16:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:16:47 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+14:36:10 INFO  : Disconnected from the channel tcfchan#13.
+15:29:02 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+15:30:16 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+15:31:10 INFO  : Hardware specification for platform project 'Microblaze_LVDS' is updated.
+15:31:45 INFO  : Hardware specification for platform project 'LVDS_UART_PLATFORM' is updated.
+15:32:17 INFO  : Result from executing command 'getProjects': LVDS_UART_PLATFORM;Microblaze_LVDS
+15:32:17 INFO  : Result from executing command 'getPlatforms': LVDS_UART_PLATFORM|C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/LVDS_UART_PLATFORM.xpfm;Microblaze_LVDS|C:/Users/mafassi/Desktop/UART_LVDS_Vitis/Microblaze_LVDS/export/Microblaze_LVDS/Microblaze_LVDS.xpfm;Microblaze_LVDS|C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Microblaze_LVDS/export/Microblaze_LVDS/Microblaze_LVDS.xpfm
+15:32:17 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+15:32:26 INFO  : Result from executing command 'getProjects': LVDS_UART_PLATFORM;Microblaze_LVDS
+15:32:26 INFO  : Result from executing command 'getPlatforms': LVDS_UART_PLATFORM|C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/LVDS_UART_PLATFORM.xpfm;LVDS_UART_PLATFORM|C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/LVDS_UART_PLATFORM.xpfm;Microblaze_LVDS|C:/Users/mafassi/Desktop/UART_LVDS_Vitis/Microblaze_LVDS/export/Microblaze_LVDS/Microblaze_LVDS.xpfm
+15:32:26 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+15:35:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:35:16 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+15:35:16 INFO  : 'jtag frequency' command is executed.
+15:35:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+15:35:21 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+15:35:21 INFO  : Context for processor 'microblaze_0' is selected.
+15:35:22 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+15:35:22 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+15:35:22 INFO  : Context for processor 'microblaze_0' is selected.
+15:35:22 INFO  : System reset is completed.
+15:35:25 INFO  : 'after 3000' command is executed.
+15:35:25 INFO  : Context for processor 'microblaze_0' is selected.
+15:35:25 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+15:35:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+15:35:25 INFO  : Context for processor 'microblaze_0' is selected.
+15:35:25 INFO  : 'con' command is executed.
+15:35:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+15:35:25 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+16:02:59 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+16:04:17 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+16:06:41 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+16:07:14 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+16:07:27 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+16:07:33 INFO  : Disconnected from the channel tcfchan#18.
+16:07:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:07:34 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+16:07:34 INFO  : 'jtag frequency' command is executed.
+16:07:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+16:07:39 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+16:07:39 INFO  : Context for processor 'microblaze_0' is selected.
+16:07:39 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+16:07:39 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:07:39 INFO  : Context for processor 'microblaze_0' is selected.
+16:07:39 INFO  : System reset is completed.
+16:07:42 INFO  : 'after 3000' command is executed.
+16:07:42 INFO  : Context for processor 'microblaze_0' is selected.
+16:07:42 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+16:07:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+16:07:43 INFO  : Context for processor 'microblaze_0' is selected.
+16:07:43 INFO  : 'con' command is executed.
+16:07:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:07:43 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+16:31:31 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+16:38:47 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+16:50:34 INFO  : Disconnected from the channel tcfchan#19.
+16:50:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:50:34 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+16:50:34 INFO  : 'jtag frequency' command is executed.
+16:50:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+16:50:40 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+16:50:40 INFO  : Context for processor 'microblaze_0' is selected.
+16:50:40 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+16:50:40 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:50:40 INFO  : Context for processor 'microblaze_0' is selected.
+16:50:40 INFO  : System reset is completed.
+16:50:43 INFO  : 'after 3000' command is executed.
+16:50:43 INFO  : Context for processor 'microblaze_0' is selected.
+16:50:43 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+16:50:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+16:50:43 INFO  : Context for processor 'microblaze_0' is selected.
+16:50:43 INFO  : 'con' command is executed.
+16:50:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:50:43 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+16:58:12 INFO  : Disconnected from the channel tcfchan#20.
+17:00:45 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+17:00:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:00:58 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+17:00:58 INFO  : 'jtag frequency' command is executed.
+17:00:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+17:01:05 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+17:01:05 INFO  : Context for processor 'microblaze_0' is selected.
+17:01:05 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+17:01:05 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:01:05 INFO  : Context for processor 'microblaze_0' is selected.
+17:01:05 INFO  : System reset is completed.
+17:01:08 INFO  : 'after 3000' command is executed.
+17:01:09 INFO  : Context for processor 'microblaze_0' is selected.
+17:01:09 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+17:01:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+17:01:09 INFO  : Context for processor 'microblaze_0' is selected.
+17:01:09 INFO  : 'con' command is executed.
+17:01:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:01:09 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+17:06:38 INFO  : Disconnected from the channel tcfchan#21.
+17:06:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:06:38 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+17:06:38 INFO  : 'jtag frequency' command is executed.
+17:06:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+17:06:44 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+17:06:44 INFO  : Context for processor 'microblaze_0' is selected.
+17:06:44 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+17:06:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:06:44 INFO  : Context for processor 'microblaze_0' is selected.
+17:06:44 INFO  : System reset is completed.
+17:06:47 INFO  : 'after 3000' command is executed.
+17:06:47 INFO  : Context for processor 'microblaze_0' is selected.
+17:06:47 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+17:06:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+17:06:47 INFO  : Context for processor 'microblaze_0' is selected.
+17:06:47 INFO  : 'con' command is executed.
+17:06:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+17:06:47 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+09:29:12 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+09:29:18 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+09:29:24 INFO  : Disconnected from the channel tcfchan#22.
+09:29:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:29:24 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+09:29:24 INFO  : 'jtag frequency' command is executed.
+09:29:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+09:29:30 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+09:29:30 INFO  : Context for processor 'microblaze_0' is selected.
+09:29:30 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+09:29:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:29:30 INFO  : Context for processor 'microblaze_0' is selected.
+09:29:30 INFO  : System reset is completed.
+09:29:33 INFO  : 'after 3000' command is executed.
+09:29:33 INFO  : Context for processor 'microblaze_0' is selected.
+09:29:33 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+09:29:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+09:29:33 INFO  : Context for processor 'microblaze_0' is selected.
+09:29:33 INFO  : 'con' command is executed.
+09:29:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+09:29:33 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+09:38:10 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+09:38:47 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+09:53:43 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+09:54:48 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+09:54:59 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+09:55:07 INFO  : Disconnected from the channel tcfchan#23.
+09:55:18 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+09:55:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:55:26 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+09:55:26 INFO  : 'jtag frequency' command is executed.
+09:55:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+09:55:33 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+09:55:33 INFO  : Context for processor 'microblaze_0' is selected.
+09:55:33 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+09:55:33 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:55:33 INFO  : Context for processor 'microblaze_0' is selected.
+09:55:33 INFO  : System reset is completed.
+09:55:36 INFO  : 'after 3000' command is executed.
+09:55:36 INFO  : Context for processor 'microblaze_0' is selected.
+09:55:37 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+09:55:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+09:55:37 INFO  : Context for processor 'microblaze_0' is selected.
+09:55:37 INFO  : 'con' command is executed.
+09:55:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+09:55:37 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+10:01:44 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:01:54 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:02:11 INFO  : Disconnected from the channel tcfchan#24.
+10:02:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:02:11 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+10:02:11 INFO  : 'jtag frequency' command is executed.
+10:02:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+10:02:17 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+10:02:17 INFO  : Context for processor 'microblaze_0' is selected.
+10:02:17 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+10:02:17 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:02:17 INFO  : Context for processor 'microblaze_0' is selected.
+10:02:17 INFO  : System reset is completed.
+10:02:20 INFO  : 'after 3000' command is executed.
+10:02:20 INFO  : Context for processor 'microblaze_0' is selected.
+10:02:20 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+10:02:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+10:02:20 INFO  : Context for processor 'microblaze_0' is selected.
+10:02:20 INFO  : 'con' command is executed.
+10:02:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:02:20 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+10:04:14 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:04:15 INFO  : Disconnected from the channel tcfchan#25.
+10:04:18 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:04:26 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:04:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:04:33 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+10:04:33 INFO  : 'jtag frequency' command is executed.
+10:04:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+10:04:40 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+10:04:40 INFO  : Context for processor 'microblaze_0' is selected.
+10:04:40 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+10:04:40 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:04:40 INFO  : Context for processor 'microblaze_0' is selected.
+10:04:40 INFO  : System reset is completed.
+10:04:43 INFO  : 'after 3000' command is executed.
+10:04:43 INFO  : Context for processor 'microblaze_0' is selected.
+10:04:43 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+10:04:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+10:04:44 INFO  : Context for processor 'microblaze_0' is selected.
+10:04:44 INFO  : 'con' command is executed.
+10:04:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:04:44 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+10:07:11 INFO  : Disconnected from the channel tcfchan#26.
+10:07:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:07:22 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+10:07:22 INFO  : 'jtag frequency' command is executed.
+10:07:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+10:07:27 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+10:07:27 INFO  : Context for processor 'microblaze_0' is selected.
+10:07:27 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+10:07:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:07:27 INFO  : Context for processor 'microblaze_0' is selected.
+10:07:27 INFO  : System reset is completed.
+10:07:30 INFO  : 'after 3000' command is executed.
+10:07:30 INFO  : Context for processor 'microblaze_0' is selected.
+10:07:31 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+10:07:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+10:07:31 INFO  : Context for processor 'microblaze_0' is selected.
+10:07:31 INFO  : 'con' command is executed.
+10:07:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:07:31 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+10:19:46 INFO  : Disconnected from the channel tcfchan#27.
+10:28:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:28:16 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+10:28:16 INFO  : 'jtag frequency' command is executed.
+10:28:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+10:28:22 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+10:28:23 INFO  : Context for processor 'microblaze_0' is selected.
+10:28:23 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+10:28:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:28:23 INFO  : Context for processor 'microblaze_0' is selected.
+10:28:23 INFO  : System reset is completed.
+10:28:26 INFO  : 'after 3000' command is executed.
+10:28:26 INFO  : Context for processor 'microblaze_0' is selected.
+10:28:27 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+10:28:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+10:28:27 INFO  : Context for processor 'microblaze_0' is selected.
+10:28:27 INFO  : 'con' command is executed.
+10:28:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:28:27 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+10:32:45 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:33:59 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:34:42 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:34:51 INFO  : Disconnected from the channel tcfchan#28.
+10:34:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:34:52 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+10:34:52 INFO  : 'jtag frequency' command is executed.
+10:34:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+10:34:57 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+10:34:57 INFO  : Context for processor 'microblaze_0' is selected.
+10:34:57 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+10:34:57 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:34:57 INFO  : Context for processor 'microblaze_0' is selected.
+10:34:57 INFO  : System reset is completed.
+10:35:00 INFO  : 'after 3000' command is executed.
+10:35:00 INFO  : Context for processor 'microblaze_0' is selected.
+10:35:01 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+10:35:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+10:35:01 INFO  : Context for processor 'microblaze_0' is selected.
+10:35:01 INFO  : 'con' command is executed.
+10:35:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:35:01 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+10:56:40 INFO  : Disconnected from the channel tcfchan#29.
+10:57:14 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:57:18 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:57:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:57:27 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+10:57:27 INFO  : 'jtag frequency' command is executed.
+10:57:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+10:57:34 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+10:57:34 INFO  : Context for processor 'microblaze_0' is selected.
+10:57:34 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+10:57:34 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:57:34 INFO  : Context for processor 'microblaze_0' is selected.
+10:57:34 INFO  : System reset is completed.
+10:57:37 INFO  : 'after 3000' command is executed.
+10:57:38 INFO  : Context for processor 'microblaze_0' is selected.
+10:57:38 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+10:57:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+10:57:38 INFO  : Context for processor 'microblaze_0' is selected.
+10:57:38 INFO  : 'con' command is executed.
+10:57:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:57:38 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+10:59:27 INFO  : Disconnected from the channel tcfchan#30.
+11:06:25 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+11:06:46 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+11:06:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:06:54 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+11:06:54 INFO  : 'jtag frequency' command is executed.
+11:06:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+11:07:00 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+11:07:01 INFO  : Context for processor 'microblaze_0' is selected.
+11:07:01 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+11:07:01 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:07:01 INFO  : Context for processor 'microblaze_0' is selected.
+11:07:01 INFO  : System reset is completed.
+11:07:04 INFO  : 'after 3000' command is executed.
+11:07:04 INFO  : Context for processor 'microblaze_0' is selected.
+11:07:05 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+11:07:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+11:07:05 INFO  : Context for processor 'microblaze_0' is selected.
+11:07:05 INFO  : 'con' command is executed.
+11:07:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:07:05 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+11:08:18 INFO  : Disconnected from the channel tcfchan#31.
+11:09:13 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+11:11:50 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+11:12:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:12:01 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+11:12:01 INFO  : 'jtag frequency' command is executed.
+11:12:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+11:12:08 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+11:12:08 INFO  : Context for processor 'microblaze_0' is selected.
+11:12:08 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+11:12:08 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:12:08 INFO  : Context for processor 'microblaze_0' is selected.
+11:12:08 INFO  : System reset is completed.
+11:12:11 INFO  : 'after 3000' command is executed.
+11:12:11 INFO  : Context for processor 'microblaze_0' is selected.
+11:12:11 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+11:12:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+11:12:12 INFO  : Context for processor 'microblaze_0' is selected.
+11:12:12 INFO  : 'con' command is executed.
+11:12:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:12:12 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+11:13:25 INFO  : Disconnected from the channel tcfchan#32.
+11:37:59 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+11:45:24 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+11:45:42 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+11:45:57 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+11:46:31 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+11:46:52 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+11:47:13 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+11:47:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:47:24 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+11:47:24 INFO  : 'jtag frequency' command is executed.
+11:47:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+11:47:31 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+11:47:31 INFO  : Context for processor 'microblaze_0' is selected.
+11:47:31 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+11:47:31 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:47:31 INFO  : Context for processor 'microblaze_0' is selected.
+11:47:31 INFO  : System reset is completed.
+11:47:34 INFO  : 'after 3000' command is executed.
+11:47:34 INFO  : Context for processor 'microblaze_0' is selected.
+11:47:34 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+11:47:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+11:47:35 INFO  : Context for processor 'microblaze_0' is selected.
+11:47:35 INFO  : 'con' command is executed.
+11:47:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:47:35 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+11:52:02 INFO  : Disconnected from the channel tcfchan#33.
+11:55:08 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+11:55:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:55:18 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+11:55:18 INFO  : 'jtag frequency' command is executed.
+11:55:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+11:55:25 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+11:55:25 INFO  : Context for processor 'microblaze_0' is selected.
+11:55:25 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+11:55:25 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:55:25 INFO  : Context for processor 'microblaze_0' is selected.
+11:55:25 INFO  : System reset is completed.
+11:55:28 INFO  : 'after 3000' command is executed.
+11:55:29 INFO  : Context for processor 'microblaze_0' is selected.
+11:55:29 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+11:55:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+11:55:29 INFO  : Context for processor 'microblaze_0' is selected.
+11:55:29 INFO  : 'con' command is executed.
+11:55:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:55:29 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+11:57:56 INFO  : Disconnected from the channel tcfchan#34.
+11:58:01 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+11:58:30 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+11:58:35 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+11:58:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:58:46 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+11:58:46 INFO  : 'jtag frequency' command is executed.
+11:58:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+11:58:53 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+11:58:53 INFO  : Context for processor 'microblaze_0' is selected.
+11:58:53 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+11:58:53 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:58:53 INFO  : Context for processor 'microblaze_0' is selected.
+11:58:53 INFO  : System reset is completed.
+11:58:56 INFO  : 'after 3000' command is executed.
+11:58:57 INFO  : Context for processor 'microblaze_0' is selected.
+11:58:57 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+11:58:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+11:58:57 INFO  : Context for processor 'microblaze_0' is selected.
+11:58:57 INFO  : 'con' command is executed.
+11:58:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+11:58:57 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+12:03:16 INFO  : Disconnected from the channel tcfchan#35.
+12:03:17 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+12:03:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:03:31 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+12:03:31 INFO  : 'jtag frequency' command is executed.
+12:03:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+12:03:37 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+12:03:38 INFO  : Context for processor 'microblaze_0' is selected.
+12:03:38 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+12:03:38 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:03:38 INFO  : Context for processor 'microblaze_0' is selected.
+12:03:38 INFO  : System reset is completed.
+12:03:41 INFO  : 'after 3000' command is executed.
+12:03:42 INFO  : Context for processor 'microblaze_0' is selected.
+12:03:42 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+12:03:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+12:03:42 INFO  : Context for processor 'microblaze_0' is selected.
+12:03:42 INFO  : 'con' command is executed.
+12:03:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:03:42 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+12:17:22 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+12:17:49 INFO  : Disconnected from the channel tcfchan#36.
+12:18:00 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+12:18:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:18:09 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+12:18:09 INFO  : 'jtag frequency' command is executed.
+12:18:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+12:18:15 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+12:18:16 INFO  : Context for processor 'microblaze_0' is selected.
+12:18:16 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+12:18:16 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:18:16 INFO  : Context for processor 'microblaze_0' is selected.
+12:18:16 INFO  : System reset is completed.
+12:18:19 INFO  : 'after 3000' command is executed.
+12:18:19 INFO  : Context for processor 'microblaze_0' is selected.
+12:18:19 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+12:18:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+12:18:20 INFO  : Context for processor 'microblaze_0' is selected.
+12:18:20 INFO  : 'con' command is executed.
+12:18:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:18:20 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+12:25:12 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+12:25:18 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+12:25:24 INFO  : Disconnected from the channel tcfchan#37.
+12:25:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:25:24 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+12:25:24 INFO  : 'jtag frequency' command is executed.
+12:25:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+12:25:30 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+12:25:30 INFO  : Context for processor 'microblaze_0' is selected.
+12:25:30 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+12:25:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:25:30 INFO  : Context for processor 'microblaze_0' is selected.
+12:25:30 INFO  : System reset is completed.
+12:25:33 INFO  : 'after 3000' command is executed.
+12:25:33 INFO  : Context for processor 'microblaze_0' is selected.
+12:25:33 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+12:25:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+12:25:33 INFO  : Context for processor 'microblaze_0' is selected.
+12:25:33 INFO  : 'con' command is executed.
+12:25:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:25:33 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+12:28:25 INFO  : Disconnected from the channel tcfchan#38.
+12:28:42 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+12:28:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:28:52 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+12:28:52 INFO  : 'jtag frequency' command is executed.
+12:28:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+12:28:58 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+12:28:59 INFO  : Context for processor 'microblaze_0' is selected.
+12:28:59 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+12:28:59 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:28:59 INFO  : Context for processor 'microblaze_0' is selected.
+12:28:59 INFO  : System reset is completed.
+12:29:02 INFO  : 'after 3000' command is executed.
+12:29:02 INFO  : Context for processor 'microblaze_0' is selected.
+12:29:02 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+12:29:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+12:29:02 INFO  : Context for processor 'microblaze_0' is selected.
+12:29:02 INFO  : 'con' command is executed.
+12:29:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:29:02 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+12:30:28 INFO  : Disconnected from the channel tcfchan#39.
+12:30:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:30:29 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+12:30:29 INFO  : 'jtag frequency' command is executed.
+12:30:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+12:30:35 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+12:30:35 INFO  : Context for processor 'microblaze_0' is selected.
+12:30:35 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+12:30:35 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:30:35 INFO  : Context for processor 'microblaze_0' is selected.
+12:30:35 INFO  : System reset is completed.
+12:30:38 INFO  : 'after 3000' command is executed.
+12:30:38 INFO  : Context for processor 'microblaze_0' is selected.
+12:30:38 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+12:30:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+12:30:38 INFO  : Context for processor 'microblaze_0' is selected.
+12:30:38 INFO  : 'con' command is executed.
+12:30:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+12:30:38 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+14:12:40 INFO  : Disconnected from the channel tcfchan#40.
+16:34:25 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+16:36:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:36:43 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+16:36:43 INFO  : 'jtag frequency' command is executed.
+16:36:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+16:36:51 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+16:36:52 INFO  : Context for processor 'microblaze_0' is selected.
+16:36:53 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+16:36:53 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:36:53 INFO  : Context for processor 'microblaze_0' is selected.
+16:36:53 INFO  : System reset is completed.
+16:36:56 INFO  : 'after 3000' command is executed.
+16:36:56 INFO  : Context for processor 'microblaze_0' is selected.
+16:36:56 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+16:36:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+16:36:56 INFO  : Context for processor 'microblaze_0' is selected.
+16:36:56 INFO  : 'con' command is executed.
+16:36:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:36:56 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+16:45:54 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+16:45:59 INFO  : Disconnected from the channel tcfchan#41.
+16:46:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:46:00 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+16:46:00 INFO  : 'jtag frequency' command is executed.
+16:46:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+16:46:05 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+16:46:05 INFO  : Context for processor 'microblaze_0' is selected.
+16:46:05 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+16:46:05 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:46:05 INFO  : Context for processor 'microblaze_0' is selected.
+16:46:05 INFO  : System reset is completed.
+16:46:08 INFO  : 'after 3000' command is executed.
+16:46:09 INFO  : Context for processor 'microblaze_0' is selected.
+16:46:09 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+16:46:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+16:46:09 INFO  : Context for processor 'microblaze_0' is selected.
+16:46:09 INFO  : 'con' command is executed.
+16:46:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:46:09 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+16:47:25 INFO  : Disconnected from the channel tcfchan#42.
+16:47:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:47:32 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+16:47:32 INFO  : 'jtag frequency' command is executed.
+16:47:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+16:47:37 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+16:47:37 INFO  : Context for processor 'microblaze_0' is selected.
+16:47:37 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+16:47:37 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:47:37 INFO  : Context for processor 'microblaze_0' is selected.
+16:47:37 INFO  : System reset is completed.
+16:47:40 INFO  : 'after 3000' command is executed.
+16:47:40 INFO  : Context for processor 'microblaze_0' is selected.
+16:47:40 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+16:47:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+16:47:40 INFO  : Context for processor 'microblaze_0' is selected.
+16:47:41 INFO  : 'con' command is executed.
+16:47:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+16:47:41 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+09:34:52 INFO  : Disconnected from the channel tcfchan#43.
+09:54:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:54:45 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+09:54:45 INFO  : 'jtag frequency' command is executed.
+09:54:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+09:54:54 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+09:54:55 INFO  : Context for processor 'microblaze_0' is selected.
+09:54:55 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+09:54:55 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:54:55 INFO  : Context for processor 'microblaze_0' is selected.
+09:54:55 INFO  : System reset is completed.
+09:54:58 INFO  : 'after 3000' command is executed.
+09:54:58 INFO  : Context for processor 'microblaze_0' is selected.
+09:54:58 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+09:54:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+09:54:58 INFO  : Context for processor 'microblaze_0' is selected.
+09:54:58 INFO  : 'con' command is executed.
+09:54:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+09:54:58 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+09:57:31 INFO  : Disconnected from the channel tcfchan#44.
+09:59:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:59:12 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+09:59:12 INFO  : 'jtag frequency' command is executed.
+09:59:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+09:59:15 ERROR : 'fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit' is cancelled.
+09:59:15 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: 'fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit' is cancelled.
+09:59:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+09:59:15 ERROR : 'fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit' is cancelled.
+09:59:20 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+09:59:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:59:29 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+09:59:29 INFO  : 'jtag frequency' command is executed.
+09:59:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+09:59:35 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+09:59:35 INFO  : Context for processor 'microblaze_0' is selected.
+09:59:35 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+09:59:35 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:59:35 INFO  : Context for processor 'microblaze_0' is selected.
+09:59:35 INFO  : System reset is completed.
+09:59:38 INFO  : 'after 3000' command is executed.
+09:59:38 INFO  : Context for processor 'microblaze_0' is selected.
+09:59:38 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+09:59:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+09:59:38 INFO  : Context for processor 'microblaze_0' is selected.
+09:59:38 INFO  : 'con' command is executed.
+09:59:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+09:59:38 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+10:16:38 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:17:55 INFO  : Disconnected from the channel tcfchan#45.
+10:17:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:17:55 INFO  : Jtag cable 'Digilent Nexys Video 210276B06393B' is selected.
+10:17:55 INFO  : 'jtag frequency' command is executed.
+10:17:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}' command is executed.
+10:18:01 INFO  : Device configured successfully with "C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit"
+10:18:01 INFO  : Context for processor 'microblaze_0' is selected.
+10:18:01 INFO  : Hardware design and registers information is loaded from 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa'.
+10:18:01 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:18:01 INFO  : Context for processor 'microblaze_0' is selected.
+10:18:01 INFO  : System reset is completed.
+10:18:04 INFO  : 'after 3000' command is executed.
+10:18:04 INFO  : Context for processor 'microblaze_0' is selected.
+10:18:04 INFO  : The application 'C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf' is downloaded to processor 'microblaze_0'.
+10:18:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B06393B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B06393B-13636093-0"}
+fpga -file C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/_ide/bitstream/Microblaze_LVDS.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/hw/Microblaze_LVDS.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Software/Debug/Software.elf
+----------------End of Script----------------
+
+10:18:04 INFO  : Context for processor 'microblaze_0' is selected.
+10:18:04 INFO  : 'con' command is executed.
+10:18:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+10:18:04 INFO  : Launch script is exported to file 'C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Software_system\_ide\scripts\systemdebugger_software_system_standalone.tcl'
+10:29:24 INFO  : Disconnected from the channel tcfchan#46.
+10:29:37 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:31:02 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:31:43 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:32:31 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:38:21 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+10:38:22 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:39:38 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+10:39:39 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:40:20 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+10:40:20 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:41:00 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+10:41:01 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:41:18 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+10:41:19 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:41:50 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+10:41:51 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:43:34 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+10:43:35 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:43:51 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+10:43:52 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:44:07 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+10:44:07 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:44:29 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+10:44:30 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:45:16 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+10:45:17 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:45:39 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+10:45:40 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:46:10 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+10:46:11 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:47:12 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+10:47:12 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:47:46 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+10:47:46 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:49:51 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+10:49:51 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:52:15 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+10:52:15 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+10:53:08 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+10:57:39 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+10:57:39 INFO  : Checking for BSP changes to sync application flags for project 'Software'...
+11:01:56 INFO  : Result from executing command 'getProjects': LVDS_UART_PLATFORM;Microblaze_LVDS;design_1_wrapper_V1
+11:01:56 INFO  : Result from executing command 'getPlatforms': LVDS_UART_PLATFORM|C:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/LVDS_UART_PLATFORM.xpfm;LVDS_UART_PLATFORM|C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/LVDS_UART_PLATFORM.xpfm;Microblaze_LVDS|C:/Users/mafassi/Desktop/UART_LVDS_Vitis/Microblaze_LVDS/export/Microblaze_LVDS/Microblaze_LVDS.xpfm;Microblaze_LVDS|C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Microblaze_LVDS/export/Microblaze_LVDS/Microblaze_LVDS.xpfm
+11:01:57 INFO  : Platform 'design_1_wrapper_V1' is added to custom repositories.
+11:01:58 INFO  : Platform 'design_1_wrapper_V1' is added to custom repositories.
+11:04:41 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...
+11:06:16 INFO  : Checking for BSP changes to sync application flags for project 'LVDS_UART_Bootloader'...

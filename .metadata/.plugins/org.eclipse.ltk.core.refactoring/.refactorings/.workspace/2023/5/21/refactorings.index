@@ -3,3 +3,6 @@
 1684746195067	Delete resource 'LVDS_UART_system'
 1684746288289	Delete resource 'Software_system'
 1684912417248	Delete resource 'Software/src/helloworld.c'
+1685091502353	Delete resource 'LVDS_UART_Bootloader_system'
+1685091735982	Delete resource 'design_1_wrapper_V1'
+1685091741243	Delete resource 'LVDS_UART_Bootloader_system'
