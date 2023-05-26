@@ -94,7 +94,7 @@ uint8  grab_hex_byte (uint8 *buf);
 #define	READ_CMD	0x03
 
 /* Declarations */
-static void display_progress (uint32_t lines);
+//static void display_progress (uint32_t lines);
 static uint8_t load_exec ();
 static uint8_t flash_get_srec_line (uint8_t *buf);
 extern void init_stdout();

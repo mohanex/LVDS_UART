@@ -1,0 +1,6 @@
+11:10:28 **** Incremental Build of configuration Debug for project LVDS_UART_Bootloader ****
+make all 
+make: Nothing to be done for 'all'.
+
+11:10:28 Build Finished (took 183ms)
+

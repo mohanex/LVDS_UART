@@ -189,3 +189,13 @@ timestamp=[2023-05-26 11:04:43], mode=BUILD, duration=0:00:01.843, duration_ms=1
 timestamp=[2023-05-26 11:04:43], mode=BUILD, duration=0:00:00.194, duration_ms=194, data={name=LVDS_UART_Bootloader_system, configuration=Debug, clean_build=false}
 timestamp=[2023-05-26 11:06:17], mode=BUILD, duration=0:00:01.082, duration_ms=1082, data={name=LVDS_UART_Bootloader, configuration=Debug, clean_build=false}
 timestamp=[2023-05-26 11:06:18], mode=BUILD, duration=0:00:00.188, duration_ms=188, data={name=LVDS_UART_Bootloader_system, configuration=Debug, clean_build=false}
+timestamp=[2023-05-26 11:09:44], mode=PLATFORM_GENERATION, duration=0:00:04.871, duration_ms=4871, data={name=LVDS_UART_PLATFORM}
+timestamp=[2023-05-26 11:09:45], mode=BUILD, duration=0:00:01.161, duration_ms=1161, data={name=LVDS_UART_Bootloader, configuration=Debug, clean_build=false}
+timestamp=[2023-05-26 11:09:46], mode=BUILD, duration=0:00:00.201, duration_ms=201, data={name=LVDS_UART_Bootloader, configuration=Debug, clean_build=false}
+timestamp=[2023-05-26 11:09:46], mode=BUILD, duration=0:00:00.209, duration_ms=209, data={name=LVDS_UART_Bootloader_system, configuration=Debug, clean_build=false}
+timestamp=[2023-05-26 11:10:11], mode=PLATFORM_GENERATION, duration=0:00:03.770, duration_ms=3770, data={name=Microblaze_LVDS}
+timestamp=[2023-05-26 11:10:24], mode=BUILD, duration=0:00:00.190, duration_ms=190, data={name=LVDS_UART_Bootloader, configuration=Debug, clean_build=false}
+timestamp=[2023-05-26 11:10:24], mode=BUILD, duration=0:00:00.207, duration_ms=207, data={name=Software, configuration=Debug, clean_build=false}
+timestamp=[2023-05-26 11:10:25], mode=BUILD, duration=0:00:00.196, duration_ms=196, data={name=Software_system, configuration=Debug, clean_build=false}
+timestamp=[2023-05-26 11:10:28], mode=BUILD, duration=0:00:00.189, duration_ms=189, data={name=LVDS_UART_Bootloader, configuration=Debug, clean_build=false}
+timestamp=[2023-05-26 11:10:28], mode=BUILD, duration=0:00:00.207, duration_ms=207, data={name=LVDS_UART_Bootloader_system, configuration=Debug, clean_build=false}

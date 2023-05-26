@@ -1,26 +1,8 @@
 Nothing to build in platform 'LVDS_UART_PLATFORM'
 
-11:06:16 **** Incremental Build of configuration Debug for project LVDS_UART_Bootloader ****
+11:10:28 **** Incremental Build of configuration Debug for project LVDS_UART_Bootloader ****
 make all 
-'Building file: ../src/bootloader.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bootloader.o" -IC:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/sw/LVDS_UART_PLATFORM/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bootloader.d" -MT"src/bootloader.o" -o "src/bootloader.o" "../src/bootloader.c"
-../src/bootloader.c:97:13: warning: 'display_progress' declared 'static' but never defined [-Wunused-function]
-   97 | static void display_progress (uint32_t lines);
-      |             ^~~~~~~~~~~~~~~~
-'Finished building: ../src/bootloader.c'
-' '
-'Building target: LVDS_UART_Bootloader.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/sw/LVDS_UART_PLATFORM/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "LVDS_UART_Bootloader.elf"  ./src/bootloader.o ./src/platform.o ./src/srec.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: LVDS_UART_Bootloader.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size LVDS_UART_Bootloader.elf  |tee "LVDS_UART_Bootloader.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-   9768	    296	   2088	  12152	   2f78	LVDS_UART_Bootloader.elf
-'Finished building: LVDS_UART_Bootloader.elf.size'
-' '
-11:06:18 **** Incremental Build of configuration Debug for project LVDS_UART_Bootloader_system ****
+make: Nothing to be done for 'all'.
+11:10:28 **** Incremental Build of configuration Debug for project LVDS_UART_Bootloader_system ****
 make all 
 Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

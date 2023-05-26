@@ -22,3 +22,5 @@ platform clean
 platform active {Microblaze_LVDS}
 platform config -updatehw {C:/Users/mafassi/Downloads/carte_blowbox/blowbox/Microblaze5/design_1_wrapper_V1.xsa}
 platform generate
+platform active {Microblaze_LVDS}
+platform generate -domains 
