@@ -3,6 +3,7 @@
 	<name>Software</name>
 	<comment>Created by Vitis v2020.2</comment>
 	<projects>
+		<project>LVDS_UART_Bootloader</project>
 		<project>LVDS_UART_PLATFORM</project>
 	</projects>
 	<buildSpec>

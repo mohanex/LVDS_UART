@@ -124,7 +124,7 @@ XClk_Wiz_Config *CLK_wiz_config;
 
 /*prototypes
  *
- 
+
 void save_to_BRAM(u32 bytes_read, u32 offset, u8 buffer_read);*/
 void QSPI_read_fun(u32 start_address, u32 size);
 int initialize_qspi_fun();
@@ -134,7 +134,7 @@ int initialize_gpio_fun();
 //int initialize_bram_fun();
 
 int main()
-{   
+{
 int status_valide;
 	init_platform();
 
@@ -150,8 +150,8 @@ int status_valide;
 
     xil_printf("QSPI Flash Read operation from %lu\r\n", (unsigned long)QSPI_MATRIX_BASEADDR_BEGIN);
 
-    u32 start_address = QSPI_MATRIX_BASEADDR_BEGIN;  // l'adresse oÃƒÂ¹ dÃƒÂ©bute les matrixes dans la qspi
-    u32 read_size = 25600;       // nombre de bits ÃƒÂ  lire 25ko sans csr
+    u32 start_address = QSPI_MATRIX_BASEADDR_BEGIN;  // l'adresse oÃ¹ dÃ©bute les matrixes dans la qspi
+    u32 read_size = 25600;       // nombre de bits Ã  lire 25ko sans csr
 
     xil_printf("Writing DATA to BRAM at %lu \r\n", (unsigned long)BRAM_MATRIX_BASEADDR);
     QSPI_read_fun(start_address, read_size);

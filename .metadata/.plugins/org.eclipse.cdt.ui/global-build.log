@@ -1,6 +1,47 @@
 Nothing to build in platform 'LVDS_UART_PLATFORM'
 
-12:28:42 **** Incremental Build of configuration Debug for project Software ****
+10:57:39 **** Incremental Build of configuration Debug for project LVDS_UART_Bootloader ****
+make all 
+'Building file: ../src/bootloader.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bootloader.o" -IC:/Users/mafassi/Desktop/UART_LVDS_Vitis/LVDS_UART_PLATFORM/export/LVDS_UART_PLATFORM/sw/LVDS_UART_PLATFORM/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bootloader.d" -MT"src/bootloader.o" -o "src/bootloader.o" "../src/bootloader.c"
+../src/bootloader.c:146:2: error: excess elements in char array initializer
+  146 |  "Error while copying executable image into RAM",
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/bootloader.c:146:2: note: (near initialization for 'errors')
+../src/bootloader.c:147:2: error: excess elements in char array initializer
+  147 |  "Error while reading an SREC line from flash",
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/bootloader.c:147:2: note: (near initialization for 'errors')
+../src/bootloader.c:148:2: error: excess elements in char array initializer
+  148 |  "SREC line is corrupted",
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/bootloader.c:148:2: note: (near initialization for 'errors')
+../src/bootloader.c:149:2: error: excess elements in char array initializer
+  149 |  "SREC has invalid checksum."
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/bootloader.c:149:2: note: (near initialization for 'errors')
+../src/bootloader.c: In function 'main':
+../src/bootloader.c:229:16: warning: passing argument 1 of 'print' makes pointer from integer without a cast [-Wint-conversion]
+  229 |   print (errors[ret]);
+      |          ~~~~~~^~~~~
+      |                |
+      |                int8_t {aka signed char}
+In file included from ../src/bootloader.c:27:
+c:\xilinx\vitis\2020.2\gnu\microblaze\nt\microblazeeb-xilinx-elf\usr\include\stdio.h:250:13: note: expected 'const char *' but argument is of type 'int8_t' {aka 'signed char'}
+  250 | void print (const char* );
+      |             ^~~~~~~~~~~
+../src/bootloader.c:232:16: warning: passing argument 1 of 'print' makes pointer from integer without a cast [-Wint-conversion]
+  232 |   print (errors[ret]);
+      |          ~~~~~~^~~~~
+      |                |
+      |                int8_t {aka signed char}
+In file included from ../src/bootloader.c:27:
+c:\xilinx\vitis\2020.2\gnu\microblaze\nt\microblazeeb-xilinx-elf\usr\include\stdio.h:250:13: note: expected 'const char *' but argument is of type 'int8_t' {aka 'signed char'}
+  250 | void print (const char* );
+      |             ^~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/bootloader.o] Error 1
+10:57:39 **** Incremental Build of configuration Debug for project Software ****
 make all 
 'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -15,9 +56,6 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/mafassi/Desktop/UART_LVDS_Vitis/L
 'Invoking: MicroBlaze Print Size'
 mb-size Software.elf  |tee "Software.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  10724	    388	   4416	  15528	   3ca8	Software.elf
+  10628	    388	   4416	  15432	   3c48	Software.elf
 'Finished building: Software.elf.size'
 ' '
-12:28:43 **** Incremental Build of configuration Debug for project Software_system ****
-make all 
-Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
