@@ -24,3 +24,4 @@ platform config -updatehw {C:/Users/mafassi/Downloads/carte_blowbox/blowbox/Micr
 platform generate
 platform active {Microblaze_LVDS}
 platform generate -domains 
+platform clean

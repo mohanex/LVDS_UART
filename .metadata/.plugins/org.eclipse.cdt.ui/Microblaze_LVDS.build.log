@@ -1,6 +1,28 @@
-11:10:08 **** Incremental Build of project Microblaze_LVDS ****
-buildplatform.bat 53096 Microblaze_LVDS no_domain_build 
-XSDB Server Channel: tcfchan#48
+12:48:12 **** Clean-only build of project Microblaze_LVDS ****
+buildplatform.bat 54895 Microblaze_LVDS clean 
+XSDB Server Channel: tcfchan#5
+Reading the platform  : "Microblaze_LVDS"
+Cleaning the BSP for domain  - standalone_microblaze_0
+make -C microblaze_0/libsrc/bram_v4_5/src -s clean 
 
-11:10:11 Build Finished (took 3s.718ms)
+make -C microblaze_0/libsrc/clk_wiz_v1_4/src -s clean 
+
+make -C microblaze_0/libsrc/cpu_v2_12/src -s clean 
+
+make -C microblaze_0/libsrc/intc_v3_12/src -s clean 
+
+make -C microblaze_0/libsrc/PmodGPIO_v1_0/src -s clean 
+
+make -C microblaze_0/libsrc/spi_v4_7/src -s clean 
+
+make -C microblaze_0/libsrc/standalone_v7_3/src -s clean 
+
+make -C microblaze_0/libsrc/tmrctr_v4_7/src -s clean 
+
+make -C microblaze_0/libsrc/uartlite_v3_5/src -s clean 
+
+rm -f microblaze_0/lib/libxil.a
+
+
+12:48:15 Build Finished (took 2s.557ms)
 

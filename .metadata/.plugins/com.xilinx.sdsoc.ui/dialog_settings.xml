@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="sdx.custom.platform.repository.locations" value="C:\Users\mafassi\Desktop\UART_LVDS_Vitis\Microblaze_LVDS\export\Microblaze_LVDS;C:\Users\mafassi\Desktop\UART_LVDS_Vitis\LVDS_UART_PLATFORM\export\LVDS_UART_PLATFORM;C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\LVDS_UART_PLATFORM\export\LVDS_UART_PLATFORM;C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Microblaze_LVDS\export\Microblaze_LVDS"/>
-	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Microblaze_LVDS\export\Microblaze_LVDS"/>
+	<item key="sdx.custom.platform.repository.locations" value="C:\Users\mafassi\Desktop\UART_LVDS_Vitis\Microblaze_LVDS\export\Microblaze_LVDS;C:\Users\mafassi\Desktop\UART_LVDS_Vitis\LVDS_UART_PLATFORM\export\LVDS_UART_PLATFORM;C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\Microblaze_LVDS\export\Microblaze_LVDS;C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\LVDS_UART_PLATFORM\export\LVDS_UART_PLATFORM"/>
+	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="C:\Users\mafassi\Desktop\UART_LVDS_Vitis2\LVDS_UART_PLATFORM\export\LVDS_UART_PLATFORM"/>
 </section>

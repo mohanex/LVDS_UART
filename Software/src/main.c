@@ -46,245 +46,232 @@
  */
 
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "platform.h"
 #include "xil_printf.h"
 #include "xparameters.h"
-#include "PmodGPIO.h"
 #include "xspi.h"
-#include "xuartlite_l.h"
-#include "xbram.h"
-#include "xclk_wiz.h"
-#include "xil_io.h"
-#include "xil_cache.h"
-#include "sleep.h"
 
 #define BYTE1				0 /* Byte 1 position */
 #define BYTE2				1 /* Byte 2 position */
 #define BYTE3				2 /* Byte 3 position */
 #define BYTE4				3 /* Byte 4 position */
 #define BYTE5				4 /* Byte 5 position */
+#define BYTE6				5 /* Byte 5 position */
+#define BYTE7				6 /* Byte 5 position */
+#define BYTE8				7 /* Byte 5 position */
 
-#define GPIO_REG_Input		0xFF
-#define GPIO_REG_DATA		0x00
-#define GPIO_CHANNEL        2
-#define GPIO_INTERRUPT_PIN  1
+#define SPI_SELECT		0x01
+#define SPI_DEVICE_ID		XPAR_SPI_0_DEVICE_ID
+#define PAGE_SIZE		256
 
-#define SPI_SELECT		    1
-#define PAGE_SIZE		    256
-#define READ_WRITE_EXTRA_BYTES 4
-
-#define UART_DEVICE_ID     XPAR_AXI_UARTLITE_0_DEVICE_ID
-#define QSPI_DEVICE_ID	   XPAR_SPI_0_DEVICE_ID
-#define GPIO_DEVICE_ID     XPAR_PMODGPIO_0_DEVICE_ID
-
-#define BRAM_MATRIX_BASEADDR       0x000F4240
-#define QSPI_MATRIX_BASEADDR_BEGIN 0x01E00000 // 0x01E00000    0x01E18FFF    May 25 14:11:24 2023    C:/Users/mafassi/Downloads/random_hex.hex
-#define UART_BASEADDR              XPAR_AXI_UARTLITE_0_BASEADDR
-#define QSPI_BASEADDR              XPAR_AXI_QUAD_SPI_0_BASEADDR
-
-#define QSPI_FLASH_SIZE            65536  // Size of QSPI flash in bytes (64KB)
-#define BUFFER_SIZE                32      // Buffer size for reading data
-//#define BRAM_SIZE                  1048576     // Size of BRAM in bytes (1MB)
+#define READ_WRITE_EXTRA_BYTES		4 /* Read/Write extra bytes */
 
 
-//u8 bram_buffer[BRAM_SIZE];
-
-//IPs Instantiations
-PmodGPIO GPIO_input;
-
-//XSpi_Stats QSPI_stats;
-static XSpi QSPI;
-
-u8 ReadID[PAGE_SIZE + READ_WRITE_EXTRA_BYTES];
-u8 WriteID[PAGE_SIZE + READ_WRITE_EXTRA_BYTES];
-
-u8 qspi_read_buffer[PAGE_SIZE + READ_WRITE_EXTRA_BYTES];
-u8 qspi_write_buffer[PAGE_SIZE + READ_WRITE_EXTRA_BYTES];
+u8 WriteBuffer[PAGE_SIZE + READ_WRITE_EXTRA_BYTES];
 /*
  * Buffer used during Read transactions.
  */
+u8 ReadBuffer[PAGE_SIZE + READ_WRITE_EXTRA_BYTES];
 
+
+static XSpi Spi;
 u8 FlashID[3];
 
-
-/*
- *
-XUartLite_Config *UART_config;
-XUartLite_Buffer *UART_Buffer;
-XUartLite_Stats *UART_Stats;
-XUartLite *UART;
-*/
-XBram XBRAM;
-XBram_Config XBRAM_config;
-
-XClk_Wiz *CLK_wiz;
-XClk_Wiz_Config *CLK_wiz_config;
-
-/*prototypes
- *
-
-void save_to_BRAM(u32 bytes_read, u32 offset, u8 buffer_read);*/
-void QSPI_read_fun(u32 start_address, u32 size);
-int initialize_qspi_fun();
 int FlashReadID(void);
-//int initialize_uart_fun();
-int initialize_gpio_fun();
-//int initialize_bram_fun();
 
 int main()
 {
-int status_valide;
 	init_platform();
-
-	status_valide = initialize_qspi_fun();
-	if(status_valide != XST_SUCCESS){
-		xil_printf("qspi initialize failed\r\n");
-	}
-
-	status_valide = initialize_gpio_fun();
-	if(status_valide != XST_SUCCESS){
-		xil_printf("gpio initialize failed\r\n");
-	}
-
-    xil_printf("QSPI Flash Read operation from %lu\r\n", (unsigned long)QSPI_MATRIX_BASEADDR_BEGIN);
-
-    u32 start_address = QSPI_MATRIX_BASEADDR_BEGIN;  // l'adresse oÃ¹ dÃ©bute les matrixes dans la qspi
-    u32 read_size = 25600;       // nombre de bits Ã  lire 25ko sans csr
-
-    xil_printf("Writing DATA to BRAM at %lu \r\n", (unsigned long)BRAM_MATRIX_BASEADDR);
-    QSPI_read_fun(start_address, read_size);
-
-
-    while (1) {
-        // Check if GPIO interrupt occurred
-        if (GPIO_getPin(&GPIO_input, GPIO_CHANNEL)){
-            // Send data stored in Block RAM over UART
-            for (u32 i = 0; i < read_size; i++) {
-                u8 data = *((volatile u8*)(start_address + i));
-                XUartLite_SendByte(UART_BASEADDR, data);
-            }
-            break;
-        }
-    }
-
-    xil_printf("Data sent over UART \r\n");
-
-
-    while(1){
-        usleep_MB(1000000);
-        xil_printf("1s attente \r\n");
-    }
-
-    cleanup_platform();
-    return 0;
-}
-
-
-/*
-* All
-* The
-* Functions
-*/
-int initialize_qspi_fun() {
-    int status;
-    XSpi_Config *conf;
-    conf = XSpi_LookupConfig(QSPI_DEVICE_ID);
-
-    status = XSpi_CfgInitialize(&QSPI, conf, QSPI_MATRIX_BASEADDR_BEGIN);
-    if (status != XST_SUCCESS) {
-        return XST_FAILURE;
-    }
-
-    /*status = XSpi_Initialize(&QSPI, QSPI_DEVICE_ID);
-    if (status != XST_SUCCESS) {
-        return XST_FAILURE;
-    }*/
-
-    status = XSpi_SetOptions(&QSPI, XSP_MASTER_OPTION | XSP_MANUAL_SSELECT_OPTION);
-	if(status != XST_SUCCESS) {
-		return XST_FAILURE;
-	}
-
-	status = XSpi_SetSlaveSelect(&QSPI, SPI_SELECT);
-	if(status != XST_SUCCESS) {
-		return XST_FAILURE;
-	}
-
-    status = XSpi_Start(&QSPI);
-    if (status != XST_SUCCESS) {
-        return XST_FAILURE;
-    }
-
-    XSpi_IntrGlobalDisable(&QSPI);
-
-    status = FlashReadID( );
-	if(status != XST_SUCCESS) {
-		return XST_FAILURE;
-	}
-
-    return XST_SUCCESS;
-}
-
-
-
-int initialize_gpio_fun() {
-    GPIO_begin(&GPIO_input, GPIO_DEVICE_ID, GPIO_REG_Input);
-    return XST_SUCCESS;
-}
-
-void QSPI_read_fun(u32 start_address, u32 size) {
-    u32 bytes_read = 0;
-    u32 bytes_to_read;
-    size_t memcpy_size;
-
-
-    int status;
-
-    while (bytes_read < size) {
-        bytes_to_read = size - bytes_read;
-        if (bytes_to_read > PAGE_SIZE) {
-            bytes_to_read = PAGE_SIZE;
-        }
-        status = XSpi_Transfer(&QSPI, qspi_write_buffer, qspi_read_buffer, (unsigned int)bytes_to_read);
-        if (status == XST_FAILURE) {
-            xil_printf("QSPI read failed!\r\n");
-            break;
-        }
-        memcpy_size = sizeof(qspi_read_buffer);
-        memcpy((void*)((char*)BRAM_MATRIX_BASEADDR + bytes_read), qspi_read_buffer, memcpy_size);
-        /*
-        for (u32 i = 0; i < bytes_to_read; i++) {
-            Xil_Out8(BRAM_MATRIX_BASEADDR + bytes_read + i,qspi_read_buffer[i]);
-            memcpy(BRAM_MATRIX_BASEADDR + i + bytes_read, qspi_read_buffer, bytes_to_read);
-        }
-        */
-        bytes_read += bytes_to_read;
-    }
-}
-
-int FlashReadID(void)
-{
 	int Status;
-	int i;
+	u8 *NULLPtr = NULL;
 
-	/* Read ID in Auto mode.*/
-	WriteID[BYTE1] = 0x9f;
-	WriteID[BYTE2] = 0xff;		/* 4 dummy bytes */
-	WriteID[BYTE3] = 0xff;
-	WriteID[BYTE4] = 0xff;
-	WriteID[BYTE5] = 0xff;
 
-	Status = XSpi_Transfer(&QSPI, WriteID, ReadID, 5);
+	/*
+	 * Initialize the SPI driver so that it's ready to use,
+	 * specify the device ID that is generated in xparameters.h.
+	 */
+	Status = XSpi_Initialize(&Spi, SPI_DEVICE_ID);
+
+	/* DEBUG ONLY SELF TEST SPI INTERFACE custom axel
+	int maVariable = XSpi_SelfTest(&Spi);
+	printf("\r\n Axel = %d \n\r", maVariable);
+   */
+	if(Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Set the SPI device as a master and in manual slave select mode such
+	 * that the slave select signal does not toggle for every byte of a
+	 * transfer, this must be done before the slave select is set.
+	 */
+	Status = XSpi_SetOptions(&Spi, XSP_MASTER_OPTION |
+			     XSP_MANUAL_SSELECT_OPTION);
+	if(Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Select the flash device on the SPI bus, so that it can be
+	 * read and written using the SPI bus.
+	 */
+	Status = XSpi_SetSlaveSelect(&Spi, SPI_SELECT);
+	if(Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Start the SPI driver so that interrupts and the device are enabled.
+	 */
+	XSpi_Start(&Spi);
+
+	XSpi_IntrGlobalDisable(&Spi);
+
+	Status = FlashReadID( );
+	if(Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	u32 adresse_to_read_from = (u32)0x000002A8;
+
+	xil_printf("Enable Writing on QSPI 0x06\n\r");
+	WriteBuffer[BYTE1] = 0x06;
+	Status = XSpi_Transfer(&Spi, WriteBuffer, NULLPtr, 1);
 	if (Status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
 
-	for(i = 0; i < 3; i++)
-		FlashID[i] = ReadID[i + 1];
 
-	xil_printf("FlashID=0x%x 0x%x 0x%x\n\r", ReadID[1], ReadID[2],
-				ReadID[3]);
+	//DEBUG ONLY SELF TEST SPI INTERFACE
+	//int maVariable = XSpi_SelfTest(&Spi);
+	//printf("\r\n Debugging = %d \n\r", maVariable);
+
+    /*u8 BankRegReadCmd[1] = {0x16};
+    u8 BankRegData[2] = {0x00, 0x00};
+    XSpi_Transfer(&Spi, BankRegReadCmd, BankRegData, 2);
+    xil_printf("SPI Flash Bank Register Data: %x %x\r\n", BankRegData[0], BankRegData[1]);*/
+
+	xil_printf("Switch to 4byte adresse\n\r");
+	WriteBuffer[BYTE1] = 0x17; //use 17h command for BRWR Bank register Write
+	WriteBuffer[BYTE2] = 0x80; // use 80h to put EXTADD to 1 (1000 0000)b
+	Status = XSpi_Transfer(&Spi, WriteBuffer, WriteBuffer, 2);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+    /*XSpi_Transfer(&Spi, BankRegReadCmd, BankRegData, 2);
+    xil_printf("SPI Flash Bank Register Data after update: %x %x\r\n", BankRegData[0], BankRegData[1]);*/
+
+	/*
+	WriteBuffer[BYTE1] = 0x01; //use 01h command for Write registers WRR
+	WriteBuffer[BYTE2] = 0x02; // use 02H FOR STATUS REGISTER page 52 for WEL = 1b
+	WriteBuffer[BYTE3] = 0xC2; // use 02H FOR CONF REGISTER page 53 for LC=11b and QUAD=1b
+	Status = XSpi_Transfer(&Spi, WriteBuffer, WriteBuffer, 3);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	*/
+    u8 AdresseReadCmd[5] = {
+    		0x13,
+			(u8) (adresse_to_read_from >> 24),
+			(u8) (adresse_to_read_from >> 16),
+			(u8) (adresse_to_read_from >> 8),
+			(u8) (adresse_to_read_from)
+    };
+    u8 AdresseReadData[20] = {0x00};
+
+
+	xil_printf("Trying to read at address 0x%x\n\r", adresse_to_read_from);
+	/*u8 ReadBuffer2[PAGE_SIZE] ={0};
+	WriteBuffer[BYTE1] = 0x03;  //Quad Output Read page 94
+	WriteBuffer[BYTE2] = (u8) (adresse_to_read_from >> 16);
+	WriteBuffer[BYTE2] = (u8) (adresse_to_read_from >> 16);
+	WriteBuffer[BYTE3] = (u8) (adresse_to_read_from >> 8);
+	WriteBuffer[BYTE4] = (u8) adresse_to_read_from;
+	WriteBuffer[BYTE5] = 0xff;
+	WriteBuffer[BYTE6] = 0xff;
+	WriteBuffer[BYTE7] = 0xff;
+	WriteBuffer[BYTE8] = 0xff;
+	int i = BYTE8+1;
+	while(i!=100){
+		WriteBuffer[i] = 0xff;
+		i++;
+	}*/
+
+	Status = XSpi_Transfer(&Spi, AdresseReadCmd, AdresseReadData, 20);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	ReadBuffer2[BYTE1] = 0xff;
+	ReadBuffer2[BYTE2] = 0xff;
+	ReadBuffer2[BYTE3] = 0xff;
+	ReadBuffer2[BYTE4] = 0xff;
+	ReadBuffer2[BYTE5] = 0xff;
+	Status = XSpi_Transfer(&Spi, ReadBuffer2, ReadBuffer2, 5);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}*/
+
+	int c=0;
+
+	while(c!=20){
+		xil_printf("ReadBuffer[%d] = 0x%x\n\r", c,AdresseReadData[c]);
+		c++;
+	}
+
+	//flbuf = (u32)FLASH_IMAGE_BASEADDR; // 0x01200000
+	//ret = load_exec ();
+/*
+	// AG modified :
+	flbuf = (u32)0x01000000;
+	ret = load_exec ();
+*/
+	// AG modified :
+	//flbuf = (u32)0x00A00000;
+	//ret = load_exec ();
+/*
+	// AG modified :
+	flbuf = (u32)0x00000030;
+	ret = load_exec ();
+*/
+	/* If we reach here, we are in error */
+
+
+
+	cleanup_platform();
+	return 0;
+}
+
+int FlashReadID(void)
+{
+	//Modified code by AFASSI Mohamed
+	int Status;
+	int i;
+
+	/* Read ID in Auto mode.*/
+	WriteBuffer[BYTE1] = 0x90;
+	WriteBuffer[BYTE2] = 0x00;		/* 3 dummy bytes */
+	WriteBuffer[BYTE3] = 0x00;
+	WriteBuffer[BYTE4] = 0x00;
+	WriteBuffer[BYTE5] = 0xff;		/* 3 dummy reading bytes */
+	WriteBuffer[BYTE6] = 0xff;
+
+	Status = XSpi_Transfer(&Spi, WriteBuffer, ReadBuffer, 6);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	for(i = 0; i < 2; i++)
+		FlashID[i] = ReadBuffer[i + 4];
+
+	xil_printf("FlashID=0x%x 0x%x\n\r", ReadBuffer[BYTE5], ReadBuffer[BYTE6]);
+
+	/*FOR S25FL256S
+	if(ReadBuffer[BYTE5]==0x01&&ReadBuffer[BYTE6]==0x18){
+		xil_printf("Spansion S25FL256S Flash detected\n\r");
+		return XST_SUCCESS;
+	}*/
 	return XST_SUCCESS;
 }

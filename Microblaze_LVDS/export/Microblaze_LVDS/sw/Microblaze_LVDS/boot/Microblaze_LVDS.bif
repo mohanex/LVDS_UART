@@ -1,6 +1,0 @@
-/*Microblaze_LVDS*/
-the_ROM_image:
-{
-   <bitstream> 
-   <elf> 
-}

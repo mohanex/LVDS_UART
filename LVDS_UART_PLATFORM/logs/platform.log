@@ -2029,3 +2029,625 @@ TRACE::2023-05-26.11:09:44::SCWMssOS::DEBUG:  swdes dump  C:/Users/mafassi/Deskt
 C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Microblaze_LVDS/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
 
 TRACE::2023-05-26.11:09:44::SCWMssOS::Sw design exists and opened at  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:08::SCWPlatform::Trying to open the hw design at C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:08::SCWPlatform::DSA given C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:08::SCWPlatform::DSA absoulate path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:10::SCWPlatform::DSA directory C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw
+TRACE::2023-05-31.12:48:10::SCWPlatform:: Platform Path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:10::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2023-05-31.12:48:10::SCWPlatform::Do not have an existing db opened. 
+TRACE::2023-05-31.12:48:10::SCWPlatform::Opened new HwDB with name design_1_wrapper_2
+TRACE::2023-05-31.12:48:10::SCWReader::Active system found as  LVDS_UART_PLATFORM
+TRACE::2023-05-31.12:48:10::SCWReader::Handling sysconfig LVDS_UART_PLATFORM
+TRACE::2023-05-31.12:48:10::SCWDomain::checking for install qemu data   : 
+TRACE::2023-05-31.12:48:10::SCWPlatform::Trying to open the hw design at C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:10::SCWPlatform::DSA given C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:10::SCWPlatform::DSA absoulate path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:10::SCWPlatform::DSA directory C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw
+TRACE::2023-05-31.12:48:10::SCWPlatform:: Platform Path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:10::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2023-05-31.12:48:10::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2023-05-31.12:48:10::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2023-05-31.12:48:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-05-31.12:48:10::SCWPlatform::Trying to open the hw design at C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:10::SCWPlatform::DSA given C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:10::SCWPlatform::DSA absoulate path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:10::SCWPlatform::DSA directory C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw
+TRACE::2023-05-31.12:48:10::SCWPlatform:: Platform Path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:10::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2023-05-31.12:48:10::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2023-05-31.12:48:10::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2023-05-31.12:48:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-05-31.12:48:10::SCWPlatform::Trying to open the hw design at C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:10::SCWPlatform::DSA given C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:10::SCWPlatform::DSA absoulate path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:10::SCWPlatform::DSA directory C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw
+TRACE::2023-05-31.12:48:10::SCWPlatform:: Platform Path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:10::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2023-05-31.12:48:10::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2023-05-31.12:48:10::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2023-05-31.12:48:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-05-31.12:48:10::SCWPlatform::Trying to open the hw design at C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:10::SCWPlatform::DSA given C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:10::SCWPlatform::DSA absoulate path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:10::SCWPlatform::DSA directory C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw
+TRACE::2023-05-31.12:48:10::SCWPlatform:: Platform Path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:10::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2023-05-31.12:48:10::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2023-05-31.12:48:10::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2023-05-31.12:48:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-05-31.12:48:10::SCWMssOS::Checking the sw design at  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:10::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2023-05-31.12:48:10::SCWMssOS::No sw design opened at  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:10::SCWMssOS::mss exists loading the mss file  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:10::SCWMssOS::Opened the sw design from mss  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:10::SCWMssOS::Adding the swdes entry C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2023-05-31.12:48:10::SCWMssOS::updating the scw layer about changes
+TRACE::2023-05-31.12:48:10::SCWMssOS::Opened the sw design.  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:10::SCWMssOS::Saving the mss changes C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:10::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-05-31.12:48:10::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-05-31.12:48:10::SCWMssOS::Commit changes completed.
+TRACE::2023-05-31.12:48:10::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2023-05-31.12:48:10::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2023-05-31.12:48:10::SCWPlatform::Trying to open the hw design at C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:10::SCWPlatform::DSA given C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:10::SCWPlatform::DSA absoulate path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:10::SCWPlatform::DSA directory C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw
+TRACE::2023-05-31.12:48:10::SCWPlatform:: Platform Path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:10::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2023-05-31.12:48:10::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2023-05-31.12:48:10::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2023-05-31.12:48:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-05-31.12:48:10::SCWMssOS::Checking the sw design at  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:10::SCWMssOS::DEBUG:  swdes dump  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2023-05-31.12:48:10::SCWMssOS::Sw design exists and opened at  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:10::SCWReader::No isolation master present  
+TRACE::2023-05-31.12:48:10::SCWMssOS::cleaning the bsp 
+TRACE::2023-05-31.12:48:10::SCWMssOS::System Command Ran  C: & cd  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp & make clean 
+TRACE::2023-05-31.12:48:10::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_5/src -s clean 
+
+TRACE::2023-05-31.12:48:11::SCWMssOS::make -C microblaze_0/libsrc/clk_wiz_v1_4/src -s clean 
+
+TRACE::2023-05-31.12:48:11::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_12/src -s clean 
+
+TRACE::2023-05-31.12:48:11::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_12/src -s clean 
+
+TRACE::2023-05-31.12:48:11::SCWMssOS::make -C microblaze_0/libsrc/PmodGPIO_v1_0/src -s clean 
+
+TRACE::2023-05-31.12:48:11::SCWMssOS::make -C microblaze_0/libsrc/spi_v4_7/src -s clean 
+
+TRACE::2023-05-31.12:48:11::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_3/src -s clean 
+
+TRACE::2023-05-31.12:48:12::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_7/src -s clean 
+
+TRACE::2023-05-31.12:48:12::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_5/src -s clean 
+
+TRACE::2023-05-31.12:48:12::SCWMssOS::rm -f microblaze_0/lib/libxil.a
+
+TRACE::2023-05-31.12:48:30::SCWPlatform::Clearing the existing platform
+TRACE::2023-05-31.12:48:30::SCWSystem::Clearing the existing sysconfig
+TRACE::2023-05-31.12:48:30::SCWMssOS::Removing the swdes entry for  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:30::SCWSystem::Clearing the domains completed.
+TRACE::2023-05-31.12:48:30::SCWPlatform::Clearing the opened hw db.
+TRACE::2023-05-31.12:48:30::SCWPlatform::DSA given C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform::DSA absoulate path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform:: Platform location is C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw
+TRACE::2023-05-31.12:48:30::SCWPlatform:: Platform Path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2023-05-31.12:48:30::SCWPlatform::Removing the HwDB with name C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform::Trying to open the hw design at C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform::DSA given C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform::DSA absoulate path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform::DSA directory C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw
+TRACE::2023-05-31.12:48:30::SCWPlatform:: Platform Path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2023-05-31.12:48:30::SCWPlatform::Do not have an existing db opened. 
+TRACE::2023-05-31.12:48:30::SCWPlatform::Opened new HwDB with name design_1_wrapper_4
+TRACE::2023-05-31.12:48:30::SCWReader::Active system found as  LVDS_UART_PLATFORM
+TRACE::2023-05-31.12:48:30::SCWReader::Handling sysconfig LVDS_UART_PLATFORM
+TRACE::2023-05-31.12:48:30::SCWDomain::checking for install qemu data   : 
+TRACE::2023-05-31.12:48:30::SCWPlatform::Trying to open the hw design at C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform::DSA given C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform::DSA absoulate path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform::DSA directory C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw
+TRACE::2023-05-31.12:48:30::SCWPlatform:: Platform Path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2023-05-31.12:48:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2023-05-31.12:48:30::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2023-05-31.12:48:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-05-31.12:48:30::SCWPlatform::Trying to open the hw design at C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform::DSA given C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform::DSA absoulate path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform::DSA directory C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw
+TRACE::2023-05-31.12:48:30::SCWPlatform:: Platform Path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2023-05-31.12:48:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2023-05-31.12:48:30::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2023-05-31.12:48:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-05-31.12:48:30::SCWPlatform::Trying to open the hw design at C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform::DSA given C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform::DSA absoulate path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform::DSA directory C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw
+TRACE::2023-05-31.12:48:30::SCWPlatform:: Platform Path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2023-05-31.12:48:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2023-05-31.12:48:30::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2023-05-31.12:48:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-05-31.12:48:30::SCWPlatform::Trying to open the hw design at C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform::DSA given C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform::DSA absoulate path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform::DSA directory C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw
+TRACE::2023-05-31.12:48:30::SCWPlatform:: Platform Path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2023-05-31.12:48:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2023-05-31.12:48:30::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2023-05-31.12:48:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-05-31.12:48:30::SCWMssOS::Checking the sw design at  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Microblaze_LVDS/microblaze_0/standalone_microblaze_0/bsp/system.mss|system_0||
+
+TRACE::2023-05-31.12:48:30::SCWMssOS::No sw design opened at  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:30::SCWMssOS::mss exists loading the mss file  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:30::SCWMssOS::Opened the sw design from mss  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:30::SCWMssOS::Adding the swdes entry C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2023-05-31.12:48:30::SCWMssOS::updating the scw layer about changes
+TRACE::2023-05-31.12:48:30::SCWMssOS::Opened the sw design.  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:30::SCWMssOS::Saving the mss changes C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:30::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-05-31.12:48:30::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-05-31.12:48:30::SCWMssOS::Commit changes completed.
+TRACE::2023-05-31.12:48:30::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2023-05-31.12:48:30::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2023-05-31.12:48:30::SCWPlatform::Trying to open the hw design at C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform::DSA given C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform::DSA absoulate path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform::DSA directory C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw
+TRACE::2023-05-31.12:48:30::SCWPlatform:: Platform Path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:30::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2023-05-31.12:48:30::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2023-05-31.12:48:30::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2023-05-31.12:48:30::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-05-31.12:48:30::SCWMssOS::Checking the sw design at  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:30::SCWMssOS::DEBUG:  swdes dump  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss|system||
+C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Microblaze_LVDS/microblaze_0/standalone_microblaze_0/bsp/system.mss|system_0||
+
+TRACE::2023-05-31.12:48:30::SCWMssOS::Sw design exists and opened at  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:30::SCWReader::No isolation master present  
+TRACE::2023-05-31.12:48:51::SCWPlatform::DSA given C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/tempdsa/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:48:51::SCWPlatform::DSA absoulate path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/tempdsa/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:48:51::SCWPlatform:: Platform location is C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/tempdsa
+TRACE::2023-05-31.12:48:51::SCWPlatform:: Platform Path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/tempdsa/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:48:51::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2023-05-31.12:48:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-05-31.12:48:51::SCWMssOS::Doing hw sync for the mss in domain: standalone_domain
+TRACE::2023-05-31.12:48:51::SCWPlatform::Trying to open the hw design at C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:51::SCWPlatform::DSA given C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:51::SCWPlatform::DSA absoulate path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:51::SCWPlatform::DSA directory C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw
+TRACE::2023-05-31.12:48:51::SCWPlatform:: Platform Path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:51::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2023-05-31.12:48:51::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2023-05-31.12:48:51::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2023-05-31.12:48:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-05-31.12:48:51::SCWPlatform::Trying to open the hw design at C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:51::SCWPlatform::DSA given C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:51::SCWPlatform::DSA absoulate path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:51::SCWPlatform::DSA directory C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw
+TRACE::2023-05-31.12:48:51::SCWPlatform:: Platform Path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_V1.xsa
+TRACE::2023-05-31.12:48:51::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2023-05-31.12:48:51::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_4
+TRACE::2023-05-31.12:48:51::SCWPlatform::Opened existing hwdb design_1_wrapper_4
+TRACE::2023-05-31.12:48:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-05-31.12:48:51::SCWMssOS::Checking the sw design at  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:51::SCWMssOS::DEBUG:  swdes dump  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss|system||
+C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Microblaze_LVDS/microblaze_0/standalone_microblaze_0/bsp/system.mss|system_0||
+
+TRACE::2023-05-31.12:48:51::SCWMssOS::Sw design exists and opened at  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:51::SCWPlatform::Trying to open the hw design at C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/tempdsa/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:48:51::SCWPlatform::DSA given C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/tempdsa/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:48:51::SCWPlatform::DSA absoulate path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/tempdsa/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:48:51::SCWPlatform::DSA directory C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/tempdsa
+TRACE::2023-05-31.12:48:51::SCWPlatform:: Platform Path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/tempdsa/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:48:51::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2023-05-31.12:48:51::SCWPlatform::update - Opened existing hwdb design_1_wrapper_5
+TRACE::2023-05-31.12:48:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-05-31.12:48:51::SCWMssOS::Saving the mss changes C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:51::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-05-31.12:48:51::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-05-31.12:48:51::SCWMssOS::Commit changes completed.
+TRACE::2023-05-31.12:48:51::SCWMssOS::Completed hw sync for the mss in domain: standalone_domain
+TRACE::2023-05-31.12:48:51::SCWMssOS::Removing the swdes entry for  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:51::SCWPlatform::Trying to open the hw design at C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:48:51::SCWPlatform::DSA given C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:48:51::SCWPlatform::DSA absoulate path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:48:51::SCWPlatform::DSA directory C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw
+TRACE::2023-05-31.12:48:51::SCWPlatform:: Platform Path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:48:51::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2023-05-31.12:48:51::SCWPlatform::Do not have an existing db opened. 
+TRACE::2023-05-31.12:48:51::SCWPlatform::Opened new HwDB with name design_1_wrapper_6
+TRACE::2023-05-31.12:48:51::SCWMssOS::Saving the mss changes C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:51::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2023-05-31.12:48:51::SCWMssOS::Writing the mss file completed C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:51::SCWMssOS::Commit changes completed.
+TRACE::2023-05-31.12:48:51::SCWPlatform::Trying to open the hw design at C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:48:51::SCWPlatform::DSA given C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:48:51::SCWPlatform::DSA absoulate path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:48:51::SCWPlatform::DSA directory C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw
+TRACE::2023-05-31.12:48:51::SCWPlatform:: Platform Path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:48:51::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2023-05-31.12:48:51::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-05-31.12:48:51::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-05-31.12:48:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-05-31.12:48:51::SCWMssOS::Checking the sw design at  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:51::SCWMssOS::DEBUG:  swdes dump  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss|system||
+C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Microblaze_LVDS/microblaze_0/standalone_microblaze_0/bsp/system.mss|system_0||
+
+TRACE::2023-05-31.12:48:51::SCWMssOS::Sw design exists and opened at  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:51::SCWWriter::formatted JSON is {
+	"platformName":	"LVDS_UART_PLATFORM",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"LVDS_UART_PLATFORM",
+	"platHandOff":	"C:/Users/mafassi/Desktop/carte_blowbox/blowbox/Microblaze5/design_1_wrapper_new.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper_new.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"LVDS_UART_PLATFORM",
+	"systems":	[{
+			"systemName":	"LVDS_UART_PLATFORM",
+			"systemDesc":	"LVDS_UART_PLATFORM",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"LVDS_UART_PLATFORM",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"7090ec96ed4e3e3afe4a562cc0a0369a",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2023-05-31.12:48:57::SCWPlatform::Started generating the artifacts platform LVDS_UART_PLATFORM
+TRACE::2023-05-31.12:48:57::SCWPlatform::Sanity checking of platform is completed
+LOG::2023-05-31.12:48:57::SCWPlatform::Started generating the artifacts for system configuration LVDS_UART_PLATFORM
+LOG::2023-05-31.12:48:57::SCWSystem::Checking the domain standalone_domain
+LOG::2023-05-31.12:48:57::SCWSystem::Not a boot domain 
+LOG::2023-05-31.12:48:57::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2023-05-31.12:48:57::SCWDomain::Generating domain artifcats
+TRACE::2023-05-31.12:48:57::SCWMssOS::Generating standalone artifcats
+TRACE::2023-05-31.12:48:57::SCWMssOS:: Copying the user libraries. 
+TRACE::2023-05-31.12:48:57::SCWPlatform::Trying to open the hw design at C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:48:57::SCWPlatform::DSA given C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:48:57::SCWPlatform::DSA absoulate path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:48:57::SCWPlatform::DSA directory C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw
+TRACE::2023-05-31.12:48:57::SCWPlatform:: Platform Path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:48:57::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2023-05-31.12:48:57::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-05-31.12:48:57::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-05-31.12:48:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-05-31.12:48:57::SCWMssOS::Checking the sw design at  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:57::SCWMssOS::DEBUG:  swdes dump  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss|system||
+C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Microblaze_LVDS/microblaze_0/standalone_microblaze_0/bsp/system.mss|system_0||
+
+TRACE::2023-05-31.12:48:57::SCWMssOS::Sw design exists and opened at  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:57::SCWMssOS::Completed writing the mss file at C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp
+TRACE::2023-05-31.12:48:57::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:48:57::SCWMssOS::bsp generated is stale removing and regenerating. 
+TRACE::2023-05-31.12:49:03::SCWMssOS::doing bsp build ... 
+TRACE::2023-05-31.12:49:03::SCWMssOS::System Command Ran  C: & cd  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp & make 
+TRACE::2023-05-31.12:49:03::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2023-05-31.12:49:03::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2023-05-31.12:49:03::SCWMssOS::make -j --no-print-directory par_libs
+
+TRACE::2023-05-31.12:49:03::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_12/src"
+
+TRACE::2023-05-31.12:49:03::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_12/src"
+
+TRACE::2023-05-31.12:49:03::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2023-05-31.12:49:03::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2023-05-31.12:49:03::SCWMssOS::-Wextra"
+
+TRACE::2023-05-31.12:49:03::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v7_3/src"
+
+TRACE::2023-05-31.12:49:03::SCWMssOS::"Running Make include in microblaze_0/libsrc/tmrctr_v4_7/src"
+
+TRACE::2023-05-31.12:49:03::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_5/src"
+
+TRACE::2023-05-31.12:49:03::SCWMssOS::"Running Make include in microblaze_0/libsrc/axiethernet_v5_11/src"
+
+TRACE::2023-05-31.12:49:03::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2023-05-31.12:49:03::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2023-05-31.12:49:03::SCWMssOS:: -Wextra"
+
+TRACE::2023-05-31.12:49:03::SCWMssOS::"Running Make include in microblaze_0/libsrc/clk_wiz_v1_4/src"
+
+TRACE::2023-05-31.12:49:03::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_5/src"
+
+TRACE::2023-05-31.12:49:03::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2023-05-31.12:49:03::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2023-05-31.12:49:03::SCWMssOS::-Wall -Wextra"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2023-05-31.12:49:04::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2023-05-31.12:49:04::SCWMssOS::all -Wextra"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::"Running Make include in microblaze_0/libsrc/spi_v4_7/src"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::"Running Make include in microblaze_0/libsrc/gpio_v4_7/src"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::"Running Make include in microblaze_0/libsrc/llfifo_v5_5/src"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2023-05-31.12:49:04::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2023-05-31.12:49:04::SCWMssOS::l -Wextra"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::make -C microblaze_0/libsrc/axiethernet_v5_11/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" 
+TRACE::2023-05-31.12:49:04::SCWMssOS::"COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-section
+TRACE::2023-05-31.12:49:04::SCWMssOS::s -Wall -Wextra"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::make -C microblaze_0/libsrc/clk_wiz_v1_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2023-05-31.12:49:04::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2023-05-31.12:49:04::SCWMssOS::ll -Wextra"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2023-05-31.12:49:04::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2023-05-31.12:49:04::SCWMssOS::-Wextra"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::make -C microblaze_0/libsrc/llfifo_v5_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2023-05-31.12:49:04::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2023-05-31.12:49:04::SCWMssOS::l -Wextra"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2023-05-31.12:49:04::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2023-05-31.12:49:04::SCWMssOS::-Wextra"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::make -C microblaze_0/libsrc/spi_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+TRACE::2023-05-31.12:49:04::SCWMssOS::_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -
+TRACE::2023-05-31.12:49:04::SCWMssOS::Wextra"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::"Running Make libs in microblaze_0/libsrc/gpio_v4_7/src"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::"Running Make libs in microblaze_0/libsrc/llfifo_v5_5/src"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v7_3/src"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::"Running Make libs in microblaze_0/libsrc/tmrctr_v4_7/src"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::"Running Make libs in microblaze_0/libsrc/uartlite_v3_5/src"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::"Running Make libs in microblaze_0/libsrc/axiethernet_v5_11/src"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::make -C microblaze_0/libsrc/llfifo_v5_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+TRACE::2023-05-31.12:49:04::SCWMssOS::_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -
+TRACE::2023-05-31.12:49:04::SCWMssOS::Wextra"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2023-05-31.12:49:04::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2023-05-31.12:49:04::SCWMssOS::ll -Wextra"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::"Running Make libs in microblaze_0/libsrc/clk_wiz_v1_4/src"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_5/src"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::make -C microblaze_0/libsrc/tmrctr_v4_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+TRACE::2023-05-31.12:49:04::SCWMssOS::_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -
+TRACE::2023-05-31.12:49:04::SCWMssOS::Wextra"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_12/src"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::make -C microblaze_0/libsrc/gpio_v4_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2023-05-31.12:49:04::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2023-05-31.12:49:04::SCWMssOS::xtra"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2023-05-31.12:49:04::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2023-05-31.12:49:04::SCWMssOS:: -Wextra"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::"Running Make libs in microblaze_0/libsrc/intc_v3_12/src"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2023-05-31.12:49:04::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2023-05-31.12:49:04::SCWMssOS::xtra"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::make -C microblaze_0/libsrc/axiethernet_v5_11/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "CO
+TRACE::2023-05-31.12:49:04::SCWMssOS::MPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -
+TRACE::2023-05-31.12:49:04::SCWMssOS::Wall -Wextra"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::make -C microblaze_0/libsrc/clk_wiz_v1_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2023-05-31.12:49:04::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2023-05-31.12:49:04::SCWMssOS::-Wextra"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::"Running Make libs in microblaze_0/libsrc/spi_v4_7/src"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_12/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2023-05-31.12:49:04::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2023-05-31.12:49:04::SCWMssOS::xtra"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_12/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+TRACE::2023-05-31.12:49:04::SCWMssOS::FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -W
+TRACE::2023-05-31.12:49:04::SCWMssOS::extra"
+
+TRACE::2023-05-31.12:49:04::SCWMssOS::make -C microblaze_0/libsrc/spi_v4_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
+TRACE::2023-05-31.12:49:04::SCWMssOS::AGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wex
+TRACE::2023-05-31.12:49:04::SCWMssOS::tra"
+
+TRACE::2023-05-31.12:49:05::SCWMssOS::"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+TRACE::2023-05-31.12:49:06::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2023-05-31.12:49:06::SCWMssOS::make --no-print-directory archive
+
+TRACE::2023-05-31.12:49:06::SCWMssOS::mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/xil_printf.o microblaze_0/lib/xtmrctr_l.o microblaze_0/lib/xplatform_info.
+TRACE::2023-05-31.12:49:06::SCWMssOS::o microblaze_0/lib/xuartlite.o microblaze_0/lib/microblaze_disable_exceptions.o microblaze_0/lib/print.o microblaze_0/lib/xllfi
+TRACE::2023-05-31.12:49:06::SCWMssOS::fo_g.o microblaze_0/lib/xtmrctr_options.o microblaze_0/lib/_exit.o microblaze_0/lib/xil_testio.o microblaze_0/lib/microblaze_di
+TRACE::2023-05-31.12:49:06::SCWMssOS::sable_dcache.o microblaze_0/lib/xaxiethernet_control.o microblaze_0/lib/microblaze_flush_dcache_range.o microblaze_0/lib/xspi_g
+TRACE::2023-05-31.12:49:06::SCWMssOS::.o microblaze_0/lib/microblaze_flush_cache_ext.o microblaze_0/lib/xspi.o microblaze_0/lib/xllfifo.o microblaze_0/lib/xuartlite_
+TRACE::2023-05-31.12:49:06::SCWMssOS::selftest.o microblaze_0/lib/inbyte.o microblaze_0/lib/xclk_wiz_g.o microblaze_0/lib/xil_misc_psreset_api.o microblaze_0/lib/xsp
+TRACE::2023-05-31.12:49:06::SCWMssOS::i_selftest.o microblaze_0/lib/xil_cache.o microblaze_0/lib/xil_util.o microblaze_0/lib/xclk_wiz_sinit.o microblaze_0/lib/xuartl
+TRACE::2023-05-31.12:49:06::SCWMssOS::ite_stats.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/xbram_g.o microblaze_0/lib/xbram_sinit.o microblaz
+TRACE::2023-05-31.12:49:06::SCWMssOS::e_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/lib/microblaze_disable_interrupts.o mic
+TRACE::2023-05-31.12:49:06::SCWMssOS::roblaze_0/lib/xbram_selftest.o microblaze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_disable_icache.o mic
+TRACE::2023-05-31.12:49:06::SCWMssOS::roblaze_0/lib/xgpio_g.o microblaze_0/lib/xtmrctr_stats.o microblaze_0/lib/xgpio_sinit.o microblaze_0/lib/xclk_wiz_intr.o microb
+TRACE::2023-05-31.12:49:06::SCWMssOS::laze_0/lib/xspi_stats.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/xgpio_selftest.o microblaze_0/lib/
+TRACE::2023-05-31.12:49:06::SCWMssOS::xtmrctr_intr.o microblaze_0/lib/xbram_intr.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/xintc_g.o microblaze_0/lib/xua
+TRACE::2023-05-31.12:49:06::SCWMssOS::rtlite_g.o microblaze_0/lib/xaxiethernet.o microblaze_0/lib/xintc_selftest.o microblaze_0/lib/xintc_l.o microblaze_0/lib/outbyt
+TRACE::2023-05-31.12:49:06::SCWMssOS::e.o microblaze_0/lib/xgpio_intr.o microblaze_0/lib/xstreamer.o microblaze_0/lib/microblaze_invalidate_dcache_range.o microblaze
+TRACE::2023-05-31.12:49:06::SCWMssOS::_0/lib/microblaze_invalidate_cache_ext.o microblaze_0/lib/microblaze_sleep.o microblaze_0/lib/xuartlite_sinit.o microblaze_0/li
+TRACE::2023-05-31.12:49:06::SCWMssOS::b/hw_exception_handler.o microblaze_0/lib/xtmrctr.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze
+TRACE::2023-05-31.12:49:06::SCWMssOS::_update_dcache.o microblaze_0/lib/xil_testcache.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_interrupts
+TRACE::2023-05-31.12:49:06::SCWMssOS::_g.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/xil_mem.o microblaze_0/lib/xclk_wiz.o microblaze_0/lib/xt
+TRACE::2023-05-31.12:49:06::SCWMssOS::mrctr_g.o microblaze_0/lib/microblaze_enable_dcache.o microblaze_0/lib/xspi_sinit.o microblaze_0/lib/xbram.o microblaze_0/lib/m
+TRACE::2023-05-31.12:49:06::SCWMssOS::icroblaze_invalidate_icache_range.o microblaze_0/lib/xtmrctr_selftest.o microblaze_0/lib/microblaze_init_dcache_range.o microbl
+TRACE::2023-05-31.12:49:06::SCWMssOS::aze_0/lib/xspi_options.o microblaze_0/lib/errno.o microblaze_0/lib/xuartlite_l.o microblaze_0/lib/xintc_options.o microblaze_0/
+TRACE::2023-05-31.12:49:06::SCWMssOS::lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/xintc_intr.o microblaze_0/lib/xil_exception.o microblaze_0/lib/pvr
+TRACE::2023-05-31.12:49:06::SCWMssOS::.o microblaze_0/lib/xgpio.o microblaze_0/lib/xil_testmem.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/xuartli
+TRACE::2023-05-31.12:49:06::SCWMssOS::te_intr.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/xil_clocking.o microblaze_0/lib/xil_assert.o microblaze_0
+TRACE::2023-05-31.12:49:06::SCWMssOS::/lib/microblaze_enable_interrupts.o microblaze_0/lib/xllfifo_sinit.o microblaze_0/lib/xgpio_extra.o microblaze_0/lib/xio.o micr
+TRACE::2023-05-31.12:49:06::SCWMssOS::oblaze_0/lib/microblaze_enable_icache.o microblaze_0/lib/xintc.o microblaze_0/lib/xaxiethernet_g.o microblaze_0/lib/xtmrctr_sin
+TRACE::2023-05-31.12:49:06::SCWMssOS::it.o microblaze_0/lib/xaxiethernet_sinit.o microblaze_0/lib/fcntl.o microblaze_0/lib/microblaze_init_icache_range.o
+
+TRACE::2023-05-31.12:49:07::SCWMssOS::'Finished building libraries'
+
+TRACE::2023-05-31.12:49:08::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2023-05-31.12:49:08::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2023-05-31.12:49:08::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2023-05-31.12:49:08::SCWSystem::Completed Processing the sysconfig LVDS_UART_PLATFORM
+LOG::2023-05-31.12:49:08::SCWPlatform::Completed generating the artifacts for system configuration LVDS_UART_PLATFORM
+TRACE::2023-05-31.12:49:08::SCWPlatform::Started preparing the platform 
+TRACE::2023-05-31.12:49:08::SCWSystem::Writing the bif file for system config LVDS_UART_PLATFORM
+TRACE::2023-05-31.12:49:08::SCWSystem::dir created 
+TRACE::2023-05-31.12:49:08::SCWSystem::Writing the bif 
+TRACE::2023-05-31.12:49:08::SCWPlatform::Started writing the spfm file 
+TRACE::2023-05-31.12:49:08::SCWPlatform::Started writing the xpfm file 
+TRACE::2023-05-31.12:49:08::SCWPlatform::Completed generating the platform
+TRACE::2023-05-31.12:49:08::SCWMssOS::Saving the mss changes C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:49:08::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-05-31.12:49:08::SCWMssOS::Running validate of swdbs.
+KEYINFO::2023-05-31.12:49:08::SCWMssOS::Could not open the swdb for system
+KEYINFO::2023-05-31.12:49:08::SCWMssOS::Could not open the sw design at  system
+ERROR: [Hsi 55-1558] Software Design system is not found
+
+TRACE::2023-05-31.12:49:08::SCWMssOS::Cleared the swdb table entry
+TRACE::2023-05-31.12:49:08::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2023-05-31.12:49:08::SCWMssOS::Writing the mss file completed C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:49:08::SCWMssOS::Commit changes completed.
+TRACE::2023-05-31.12:49:08::SCWPlatform::Trying to open the hw design at C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:49:08::SCWPlatform::DSA given C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:49:08::SCWPlatform::DSA absoulate path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:49:08::SCWPlatform::DSA directory C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw
+TRACE::2023-05-31.12:49:08::SCWPlatform:: Platform Path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:49:08::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2023-05-31.12:49:08::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-05-31.12:49:08::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-05-31.12:49:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-05-31.12:49:08::SCWMssOS::Checking the sw design at  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:49:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss|system||
+C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Microblaze_LVDS/microblaze_0/standalone_microblaze_0/bsp/system.mss|system_0||
+
+TRACE::2023-05-31.12:49:08::SCWMssOS::Sw design exists and opened at  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:49:08::SCWWriter::formatted JSON is {
+	"platformName":	"LVDS_UART_PLATFORM",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"LVDS_UART_PLATFORM",
+	"platHandOff":	"C:/Users/mafassi/Desktop/carte_blowbox/blowbox/Microblaze5/design_1_wrapper_new.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper_new.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"LVDS_UART_PLATFORM",
+	"systems":	[{
+			"systemName":	"LVDS_UART_PLATFORM",
+			"systemDesc":	"LVDS_UART_PLATFORM",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"LVDS_UART_PLATFORM",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"84d88ecdcf2238b9970eb2a44fbacc17",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2023-05-31.12:49:08::SCWPlatform::updated the xpfm file.
+TRACE::2023-05-31.12:49:08::SCWPlatform::Trying to open the hw design at C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:49:08::SCWPlatform::DSA given C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:49:08::SCWPlatform::DSA absoulate path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:49:08::SCWPlatform::DSA directory C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw
+TRACE::2023-05-31.12:49:08::SCWPlatform:: Platform Path C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/hw/design_1_wrapper_new.xsa
+TRACE::2023-05-31.12:49:08::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2023-05-31.12:49:08::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_6
+TRACE::2023-05-31.12:49:08::SCWPlatform::Opened existing hwdb design_1_wrapper_6
+TRACE::2023-05-31.12:49:08::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-05-31.12:49:08::SCWMssOS::Checking the sw design at  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2023-05-31.12:49:08::SCWMssOS::DEBUG:  swdes dump  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss|system||
+C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/Microblaze_LVDS/microblaze_0/standalone_microblaze_0/bsp/system.mss|system_0||
+
+TRACE::2023-05-31.12:49:08::SCWMssOS::Sw design exists and opened at  C:/Users/mafassi/Desktop/UART_LVDS_Vitis2/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/system.mss

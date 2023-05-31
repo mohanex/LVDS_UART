@@ -24,3 +24,7 @@ platform generate
 platform write
 platform active {LVDS_UART_PLATFORM}
 platform generate -domains 
+platform clean
+platform active {LVDS_UART_PLATFORM}
+platform config -updatehw {C:/Users/mafassi/Desktop/carte_blowbox/blowbox/Microblaze5/design_1_wrapper_new.xsa}
+platform generate
