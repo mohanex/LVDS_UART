@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="Software_system-imgFile" value=""/>
+	<item key="Software_system-offSet" value=""/>
+	<item key="Software_system-initFile" value=""/>
+	<item key="Software_system-flashType" value="28f00am29ew-bpi-x16"/>
+	<item key="Software_system-verifyFlash" value="false"/>
+	<item key="Software_system-blankCheck" value="false"/>
+	<item key="Software_system-device" value="Auto Detect"/>
+	<item key="Software_system-target" value="Local"/>
+	<item key="programflash.hwplatform" value="Software_system"/>
+</section>

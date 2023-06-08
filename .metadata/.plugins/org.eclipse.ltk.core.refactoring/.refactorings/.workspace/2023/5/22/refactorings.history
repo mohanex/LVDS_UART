@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;LVDS_UART_Bootloader_system&apos;" deleteContents="true" description="Delete resource &apos;LVDS_UART_Bootloader_system&apos;" element1="/LVDS_UART_Bootloader_system" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1685529453262"/>
+</session>
