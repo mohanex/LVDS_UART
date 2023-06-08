@@ -25,3 +25,6 @@ platform generate
 platform active {Microblaze_LVDS}
 platform generate -domains 
 platform clean
+platform active {Microblaze_LVDS}
+platform config -updatehw {C:/Users/mafassi/Desktop/vierge_hardware_with_modified_pins.xsa}
+platform generate

@@ -1,2 +1,6 @@
-2023-05-31T12:52:07.0279622000-Nothing to build in platform 'LVDS_UART_PLATFORM'
+2023-06-01T17:27:22.110428900255-17:27:22 **** Incremental Build of project LVDS_UART_PLATFORM ****
+000-buildplatform.bat 51461 LVDS_UART_PLATFORM no_domain_build 
+000-XSDB Server Channel: tcfchan#9
+00255-
+17:27:23 Build Finished (took 1s.828ms)
 

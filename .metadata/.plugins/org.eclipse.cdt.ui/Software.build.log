@@ -1,4 +1,4 @@
-12:52:07 **** Incremental Build of configuration Debug for project Software ****
+17:27:24 **** Incremental Build of configuration Debug for project Software ****
 make all 
 'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -13,9 +13,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/mafassi/Desktop/UART_LVDS_Vitis/L
 'Invoking: MicroBlaze Print Size'
 mb-size Software.elf  |tee "Software.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  10320	    388	   3732	  14440	   3868	Software.elf
+  10340	    388	   3736	  14464	   3880	Software.elf
 'Finished building: Software.elf.size'
 ' '
 
-12:52:08 Build Finished (took 1s.20ms)
+17:27:25 Build Finished (took 1s.134ms)
 

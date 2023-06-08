@@ -28,3 +28,8 @@ platform clean
 platform active {LVDS_UART_PLATFORM}
 platform config -updatehw {C:/Users/mafassi/Desktop/carte_blowbox/blowbox/Microblaze5/design_1_wrapper_new.xsa}
 platform generate
+platform active {LVDS_UART_PLATFORM}
+platform config -updatehw {C:/Users/mafassi/Desktop/vierge_hardware_with_modified_pins.xsa}
+platform generate -domains 
+platform active {LVDS_UART_PLATFORM}
+platform generate -domains 

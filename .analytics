@@ -215,3 +215,17 @@ timestamp=[2023-05-31 12:49:12], mode=BUILD, duration=0:00:01.337, duration_ms=1
 timestamp=[2023-05-31 12:49:12], mode=BUILD, duration=0:00:00.181, duration_ms=181, data={name=Software_system, configuration=Debug, clean_build=false}
 timestamp=[2023-05-31 12:50:35], mode=BUILD, duration=0:00:01.006, duration_ms=1006, data={name=Software, configuration=Debug, clean_build=false}
 timestamp=[2023-05-31 12:52:08], mode=BUILD, duration=0:00:01.029, duration_ms=1029, data={name=Software, configuration=Debug, clean_build=false}
+timestamp=[2023-06-01 09:58:27], mode=WORKBENCH_START, duration=0:00:09.033, duration_ms=9033, data={}
+timestamp=[2023-06-01 09:58:27], mode=WORKBENCH_UI_INIT, duration=0:00:00.524, duration_ms=524, data={editors_count=7, platform_editors_count=0, projects_count=5, platform_projects_count=2, active_platform_editor=false, projects=LVDS_UART_PLATFORM,Microblaze_LVDS,RemoteSystemsTempFiles,Software,Software_system}
+timestamp=[2023-06-01 09:58:28], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.176, duration_ms=176, data={}
+timestamp=[2023-06-01 09:58:38], mode=BUILD, duration=0:00:00.219, duration_ms=219, data={name=Software, configuration=Debug, clean_build=false}
+timestamp=[2023-06-01 09:58:38], mode=BUILD, duration=0:00:00.212, duration_ms=212, data={name=Software_system, configuration=Debug, clean_build=false}
+timestamp=[2023-06-01 17:09:23], mode=WORKBENCH_START, duration=0:00:09.436, duration_ms=9436, data={}
+timestamp=[2023-06-01 17:09:24], mode=WORKBENCH_UI_INIT, duration=0:00:00.551, duration_ms=551, data={editors_count=1, platform_editors_count=0, projects_count=5, platform_projects_count=2, active_platform_editor=false, projects=LVDS_UART_PLATFORM,Microblaze_LVDS,RemoteSystemsTempFiles,Software,Software_system}
+timestamp=[2023-06-01 17:09:24], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.160, duration_ms=160, data={}
+timestamp=[2023-06-01 17:10:17], mode=BUILD, duration=0:00:01.255, duration_ms=1255, data={name=Software, configuration=Debug, clean_build=false}
+timestamp=[2023-06-01 17:21:33], mode=PLATFORM_GENERATION, duration=0:00:02.847, duration_ms=2847, data={name=LVDS_UART_PLATFORM}
+timestamp=[2023-06-01 17:21:45], mode=PLATFORM_GENERATION, duration=0:00:10.210, duration_ms=10210, data={name=Microblaze_LVDS}
+timestamp=[2023-06-01 17:27:24], mode=PLATFORM_GENERATION, duration=0:00:01.920, duration_ms=1920, data={name=LVDS_UART_PLATFORM}
+timestamp=[2023-06-01 17:27:25], mode=BUILD, duration=0:00:01.158, duration_ms=1158, data={name=Software, configuration=Debug, clean_build=false}
+timestamp=[2023-06-01 17:27:25], mode=BUILD, duration=0:00:00.190, duration_ms=190, data={name=Software_system, configuration=Debug, clean_build=false}

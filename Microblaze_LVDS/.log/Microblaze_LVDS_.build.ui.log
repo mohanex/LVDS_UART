@@ -1,28 +1,219 @@
-2023-05-31T12:48:12.73915600255-12:48:12 **** Clean-only build of project Microblaze_LVDS ****
-000-buildplatform.bat 54895 Microblaze_LVDS clean 
+2023-06-01T17:21:35.461206500255-17:21:35 **** Build of project Microblaze_LVDS ****
+000-buildplatform.bat 51461 Microblaze_LVDS  
 000-XSDB Server Channel: tcfchan#5
-000-Reading the platform  : "Microblaze_LVDS"
-000-Cleaning the BSP for domain  - standalone_microblaze_0
-000-make -C microblaze_0/libsrc/bram_v4_5/src -s clean 
+000-C:/Xilinx/Vitis/2020.2/gnu/microblaze/nt
+000-ERROR: unconnected interrupt pins in the design 
 000-
-000-make -C microblaze_0/libsrc/clk_wiz_v1_4/src -s clean 
+000-Building the BSP Library for domain  - standalone_microblaze_0 on processor microblaze_0
+000-make --no-print-directory seq_libs
 000-
-000-make -C microblaze_0/libsrc/cpu_v2_12/src -s clean 
+000-'Finished building libraries sequentially.'
 000-
-000-make -C microblaze_0/libsrc/intc_v3_12/src -s clean 
+000-make -j --no-print-directory par_libs
 000-
-000-make -C microblaze_0/libsrc/PmodGPIO_v1_0/src -s clean 
+000-"Running Make include in microblaze_0/libsrc/axiethernet_v5_11/src"
 000-
-000-make -C microblaze_0/libsrc/spi_v4_7/src -s clean 
+000-"Running Make include in microblaze_0/libsrc/bram_v4_5/src"
 000-
-000-make -C microblaze_0/libsrc/standalone_v7_3/src -s clean 
+000-"Running Make include in microblaze_0/libsrc/clk_wiz_v1_4/src"
 000-
-000-make -C microblaze_0/libsrc/tmrctr_v4_7/src -s clean 
+000-"Running Make include in microblaze_0/libsrc/cpu_v2_12/src"
 000-
-000-make -C microblaze_0/libsrc/uartlite_v3_5/src -s clean 
+000-make -C microblaze_0/libsrc/axiethernet_v5_11/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" 
+000-"COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-section
+000-s -Wall -Wextra"
 000-
-000-rm -f microblaze_0/lib/libxil.a
+000-"Running Make include in microblaze_0/libsrc/gpio_v4_7/src"
+000-
+000-make -C microblaze_0/libsrc/bram_v4_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+000--Wextra"
+000-
+000-"Running Make include in microblaze_0/libsrc/intc_v3_12/src"
+000-
+000-make -C microblaze_0/libsrc/clk_wiz_v1_4/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+000-ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+000-ll -Wextra"
+000-
+000-make -C microblaze_0/libsrc/cpu_v2_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+000--Wextra"
+000-
+000-"Running Make include in microblaze_0/libsrc/llfifo_v5_5/src"
+000-
+000-make -C microblaze_0/libsrc/gpio_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+000--Wextra"
+000-
+000-make -C microblaze_0/libsrc/intc_v3_12/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+000-ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+000- -Wextra"
+000-
+000-"Running Make include in microblaze_0/libsrc/spi_v4_7/src"
+000-
+000-"Running Make include in microblaze_0/libsrc/standalone_v7_3/src"
+000-
+000-make -C microblaze_0/libsrc/llfifo_v5_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+000-LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+000-l -Wextra"
+000-
+000-"Running Make include in microblaze_0/libsrc/tmrctr_v4_7/src"
+000-
+000-make -C microblaze_0/libsrc/spi_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+000-_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -
+000-Wextra"
+000-
+000-make -C microblaze_0/libsrc/standalone_v7_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+000-OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+000--Wall -Wextra"
+000-
+000-make -C microblaze_0/libsrc/tmrctr_v4_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+000-LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+000-l -Wextra"
+000-
+000-"Running Make include in microblaze_0/libsrc/uartlite_v3_5/src"
+000-
+000-make -C microblaze_0/libsrc/uartlite_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+000-PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+000-all -Wextra"
+000-
+000-"Running Make libs in microblaze_0/libsrc/axiethernet_v5_11/src"
+000-
+000-"Running Make libs in microblaze_0/libsrc/bram_v4_5/src"
+000-
+000-make -C microblaze_0/libsrc/axiethernet_v5_11/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "CO
+000-MPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -
+000-Wall -Wextra"
+000-
+000-"Running Make libs in microblaze_0/libsrc/clk_wiz_v1_4/src"
+000-
+000-make -C microblaze_0/libsrc/bram_v4_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+000-LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+000-xtra"
+000-
+000-"Running Make libs in microblaze_0/libsrc/cpu_v2_12/src"
+000-
+000-make -C microblaze_0/libsrc/clk_wiz_v1_4/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+000-R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+000--Wextra"
+000-
+000-"Running Make libs in microblaze_0/libsrc/gpio_v4_7/src"
+000-
+000-make -C microblaze_0/libsrc/cpu_v2_12/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+000-LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+000-xtra"
+000-
+000-"Running Make libs in microblaze_0/libsrc/intc_v3_12/src"
+000-
+000-make -C microblaze_0/libsrc/gpio_v4_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+000-LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+000-xtra"
+000-
+000-"Running Make libs in microblaze_0/libsrc/llfifo_v5_5/src"
+000-
+000-make -C microblaze_0/libsrc/intc_v3_12/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+000-FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -W
+000-extra"
+000-
+000-"Running Make libs in microblaze_0/libsrc/spi_v4_7/src"
+000-
+000-"Running Make libs in microblaze_0/libsrc/standalone_v7_3/src"
+000-
+000-make -C microblaze_0/libsrc/llfifo_v5_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+000-_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -
+000-Wextra"
+000-
+000-make -C microblaze_0/libsrc/spi_v4_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_FL
+000-AGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -Wex
+000-tra"
+000-
+000-"Running Make libs in microblaze_0/libsrc/tmrctr_v4_7/src"
+000-
+000-"Running Make libs in microblaze_0/libsrc/uartlite_v3_5/src"
+000-
+000-In file included from ../../../include/xstatus.h:29,
+000-                 from xclk_wiz.c:35:
+000-xclk_wiz.c: In function 'XClk_Wiz_SetMinErr':
+000/Microblaze_LVDS/microblaze_0/standalone_microblaze_0/bsp/microblaze_0/include/xil_assert.h111-1-1'return' with a value, in function returning void [-Wreturn-type]1-../../../include/xil_assert.h:111:16: warning: 'return' with a value, in function returning void [-Wreturn-type]
+000-  111 |         return 0;                                  \
+000-      |                ^
+000/Microblaze_LVDS/microblaze_0/standalone_microblaze_0/bsp/microblaze_0/libsrc/clk_wiz_v1_4/src/xclk_wiz.c299-1-1in expansion of macro 'Xil_AssertNonvoid'0-xclk_wiz.c:299:2: note: in expansion of macro 'Xil_AssertNonvoid'
+000-  299 |  Xil_AssertNonvoid(InstancePtr != NULL);
+000-      |  ^~~~~~~~~~~~~~~~~
+000/Microblaze_LVDS/microblaze_0/standalone_microblaze_0/bsp/microblaze_0/libsrc/clk_wiz_v1_4/src/xclk_wiz.c297-1-1declared here0-xclk_wiz.c:297:6: note: declared here
+000-  297 | void XClk_Wiz_SetMinErr(XClk_Wiz  *InstancePtr, u64 Minerr)
+000-      |      ^~~~~~~~~~~~~~~~~~
+000-In file included from ../../../include/xstatus.h:29,
+000-                 from xclk_wiz.c:35:
+000/Microblaze_LVDS/microblaze_0/standalone_microblaze_0/bsp/microblaze_0/include/xil_assert.h111-1-1'return' with a value, in function returning void [-Wreturn-type]1-../../../include/xil_assert.h:111:16: warning: 'return' with a value, in function returning void [-Wreturn-type]
+000-  111 |         return 0;                                  \
+000-      |                ^
+000/Microblaze_LVDS/microblaze_0/standalone_microblaze_0/bsp/microblaze_0/libsrc/clk_wiz_v1_4/src/xclk_wiz.c300-1-1in expansion of macro 'Xil_AssertNonvoid'0-xclk_wiz.c:300:2: note: in expansion of macro 'Xil_AssertNonvoid'
+000-  300 |  Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+000-      |  ^~~~~~~~~~~~~~~~~
+000/Microblaze_LVDS/microblaze_0/standalone_microblaze_0/bsp/microblaze_0/libsrc/clk_wiz_v1_4/src/xclk_wiz.c297-1-1declared here0-xclk_wiz.c:297:6: note: declared here
+000-  297 | void XClk_Wiz_SetMinErr(XClk_Wiz  *InstancePtr, u64 Minerr)
+000-      |      ^~~~~~~~~~~~~~~~~~
+000-make -C microblaze_0/libsrc/standalone_v7_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+000-ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+000-ll -Wextra"
+000-
+000-make -C microblaze_0/libsrc/tmrctr_v4_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER
+000-_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -
+000-Wextra"
+000-
+000/LVDS_UART_PLATFORM/microblaze_0/standalone_domain/bsp/microblaze_0/libsrc/axiethernet_v5_11/src/xaxiethernet_g.c51-1-1missing initializer for field 'AxiMcDmaChan_Cnt' of 'XAxiEthernet_Config' {aka 'struct XAxiEthernet_Config'} [-Wmissing-field-initializers]1-xaxiethernet_g.c:51:2: warning: missing initializer for field 'AxiMcDmaChan_Cnt' of 'XAxiEthernet_Config' {aka 'struct XAxiEthernet_Config'} [-Wmissing-field-initializers]
+000-   51 |  }
+000-      |  ^
+000-In file included from xaxiethernet_g.c:17:
+000/Microblaze_LVDS769-1-1'AxiMcDmaChan_Cnt' declared here0-xaxiethernet.h:769:5: note: 'AxiMcDmaChan_Cnt' declared here
+000-  769 |  u8 AxiMcDmaChan_Cnt;  /**< Axi MCDMA Channel Count */
+000-      |     ^~~~~~~~~~~~~~~~
+000-make -C microblaze_0/libsrc/uartlite_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+000-ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+000- -Wextra"
+000-
+000/Microblaze_LVDS55-1-1#pragma message: For the sleep routines, assembly instructions are used0-microblaze_sleep.c:55:9: note: #pragma message: For the sleep routines, assembly instructions are used
+000-   55 | #pragma message ("For the sleep routines, assembly instructions are used")
+000-      |         ^~~~~~~
+000-"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+000-
+000-'Finished building libraries parallelly.'
+000-
+000-make --no-print-directory archive
+000-
+000-mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/xil_printf.o microblaze_0/lib/xtmrctr_l.o microblaze_0/lib/xplatform_info.
+000-o microblaze_0/lib/xuartlite.o microblaze_0/lib/microblaze_disable_exceptions.o microblaze_0/lib/print.o microblaze_0/lib/xllfi
+000-fo_g.o microblaze_0/lib/xtmrctr_options.o microblaze_0/lib/_exit.o microblaze_0/lib/xil_testio.o microblaze_0/lib/microblaze_di
+000-sable_dcache.o microblaze_0/lib/xaxiethernet_control.o microblaze_0/lib/microblaze_flush_dcache_range.o microblaze_0/lib/xspi_g
+000-.o microblaze_0/lib/microblaze_flush_cache_ext.o microblaze_0/lib/xspi.o microblaze_0/lib/xllfifo.o microblaze_0/lib/xuartlite_
+000-selftest.o microblaze_0/lib/inbyte.o microblaze_0/lib/xclk_wiz_g.o microblaze_0/lib/xil_misc_psreset_api.o microblaze_0/lib/xsp
+000-i_selftest.o microblaze_0/lib/xil_cache.o microblaze_0/lib/xil_util.o microblaze_0/lib/xclk_wiz_sinit.o microblaze_0/lib/xuartl
+000-ite_stats.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/xbram_g.o microblaze_0/lib/xbram_sinit.o microblaz
+000-e_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/lib/microblaze_disable_interrupts.o mic
+000-roblaze_0/lib/xbram_selftest.o microblaze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_disable_icache.o mic
+000-roblaze_0/lib/xgpio_g.o microblaze_0/lib/xtmrctr_stats.o microblaze_0/lib/xgpio_sinit.o microblaze_0/lib/xclk_wiz_intr.o microb
+000-laze_0/lib/xspi_stats.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/xgpio_selftest.o microblaze_0/lib/
+000-xtmrctr_intr.o microblaze_0/lib/xbram_intr.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/xintc_g.o microblaze_0/lib/xua
+000-rtlite_g.o microblaze_0/lib/xaxiethernet.o microblaze_0/lib/xintc_selftest.o microblaze_0/lib/xintc_l.o microblaze_0/lib/outbyt
+000-e.o microblaze_0/lib/xgpio_intr.o microblaze_0/lib/xstreamer.o microblaze_0/lib/microblaze_invalidate_dcache_range.o microblaze
+000-_0/lib/microblaze_invalidate_cache_ext.o microblaze_0/lib/microblaze_sleep.o microblaze_0/lib/xuartlite_sinit.o microblaze_0/li
+000-b/hw_exception_handler.o microblaze_0/lib/xtmrctr.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze
+000-_update_dcache.o microblaze_0/lib/xil_testcache.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_interrupts
+000-_g.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/xil_mem.o microblaze_0/lib/xclk_wiz.o microblaze_0/lib/xt
+000-mrctr_g.o microblaze_0/lib/microblaze_enable_dcache.o microblaze_0/lib/xspi_sinit.o microblaze_0/lib/xbram.o microblaze_0/lib/m
+000-icroblaze_invalidate_icache_range.o microblaze_0/lib/xtmrctr_selftest.o microblaze_0/lib/microblaze_init_dcache_range.o microbl
+000-aze_0/lib/xspi_options.o microblaze_0/lib/errno.o microblaze_0/lib/xuartlite_l.o microblaze_0/lib/xintc_options.o microblaze_0/
+000-lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/xintc_intr.o microblaze_0/lib/xil_exception.o microblaze_0/lib/pvr
+000-.o microblaze_0/lib/xgpio.o microblaze_0/lib/xil_testmem.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/xuartli
+000-te_intr.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/xil_clocking.o microblaze_0/lib/xil_assert.o microblaze_0
+000-/lib/microblaze_enable_interrupts.o microblaze_0/lib/xllfifo_sinit.o microblaze_0/lib/xgpio_extra.o microblaze_0/lib/xio.o micr
+000-oblaze_0/lib/microblaze_enable_icache.o microblaze_0/lib/xintc.o microblaze_0/lib/xaxiethernet_g.o microblaze_0/lib/xtmrctr_sin
+000-it.o microblaze_0/lib/xaxiethernet_sinit.o microblaze_0/lib/fcntl.o microblaze_0/lib/microblaze_init_icache_range.o
+000-
+000-mb-ar: creating microblaze_0/lib/libxil.a
+000-'Finished building libraries'
 000-
 00255-
-12:48:15 Build Finished (took 2s.557ms)
+17:21:45 Build Finished (took 10s.146ms)
 

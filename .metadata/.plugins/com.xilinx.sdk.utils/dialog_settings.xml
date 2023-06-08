@@ -2,5 +2,6 @@
 <section name="Workbench">
 	<item key="scw_hwspec" value="C:\Users\mafassi\Downloads\carte_blowbox\blowbox\Microblaze5"/>
 	<item key="sdx_program_fpga_view_bit_bmm_browse_key" value="C:\Users\mafassi\Downloads"/>
-	<item key="scw_hwspec_file_selection" value="C:\Users\mafassi\Desktop\carte_blowbox\blowbox\Microblaze5"/>
+	<item key="scw_hwspec_file_selection" value="C:\Users\mafassi\Desktop"/>
+	<item key="debug_files_selection" value="C:\Users\mafassi\Desktop\Microblaze\blowbox\Microblaze5\SDK\blowbox_v19_bootloader\_ide\bitstream"/>
 </section>
